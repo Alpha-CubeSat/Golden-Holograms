@@ -14,6 +14,8 @@
     Backend local database (learn) 
 
     Backend deploy level database (learn) 
+    
+    Database security (seek help) 
 
     Auth (user auth or IP auth (strategic decision)) 
 
