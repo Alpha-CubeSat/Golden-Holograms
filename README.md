@@ -1,4 +1,7 @@
-**Welcome to the Golden Holograms code base**
+**Welcome to the Golden Holograms Code Base**
+
+
+
 
 **Preliminary Key Tasks** (feature and anticipated deadline):
   
