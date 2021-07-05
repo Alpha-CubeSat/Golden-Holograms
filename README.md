@@ -40,6 +40,7 @@ Key tasks:
       Working contact form at bottom of home page
       "Home Screen Icon" for mobile and desktop users who do that
       Optional -- smooth navigation scroll for header/menu clicks
+      Optional -- intro animation for WebGL! 
 
     Optimization:
       Site:
