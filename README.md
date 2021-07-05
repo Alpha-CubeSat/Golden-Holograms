@@ -66,6 +66,7 @@ Key tasks:
     Bug fixes:
       Spurts of sound play when certain videos are played (just fix streaming assets sources so that there is no sound)
       DNA play button plays fish video instead (simple Unity script issue that has been identified)
+      WebGL container background needs to be transparent 
 
     Deployment:
       Follow-up with COECIS to get a sense of what they need from me
