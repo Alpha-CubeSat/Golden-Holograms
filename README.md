@@ -10,7 +10,6 @@ Then, to launch the application, type: node index.js
 
 
 
-
 Key tasks:
 
 
@@ -45,7 +44,7 @@ Key tasks:
       Working contact form at bottom of home page
       "Home Screen Icon" for mobile and desktop users who do that
       Optional -- smooth navigation scroll for header/menu clicks
-      Optional -- intro animation for WebGL! 
+      Optional -- intro animation for WebGL!
 
     Optimization:
       Site:
@@ -72,7 +71,7 @@ Key tasks:
     Bug fixes:
       Spurts of sound play when certain videos are played (just fix streaming assets sources so that there is no sound)
       DNA play button plays fish video instead (simple Unity script issue that has been identified)
-      WebGL container background needs to be transparent 
+      WebGL container background needs to be transparent
 
     Deployment:
       Follow-up with COECIS to get a sense of what they need from me
