@@ -3,6 +3,9 @@
 To use, first clone repo. Then launch Live Server (package/plugin) in Atom or VS Code with repo folder added as project, pointing to the index.html in the project root. This should launch the application in a static viewing configuration.
 
 
+
+
+
 Key tasks:
 
 
