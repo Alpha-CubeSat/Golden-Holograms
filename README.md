@@ -8,7 +8,7 @@ Navigate to the project directory in your terminal/command line and type: npm in
 
 Then, to launch the application, type: node index.js
 
-
+----------------------------------------------------------------------------------------------
 
 Key tasks:
 
