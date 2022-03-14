@@ -1,0 +1,92 @@
+    <!-- TIMELINE-->
+    <section id="timeline">
+      <div class="container">
+        <div class="timeline">
+          <div class="timeline-container">
+            <div class="timeline-icon">
+              <i class="fas fa-tools"></i>
+              <div class="time-label">08.01.20</div>
+             </div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">CubeSat Assembly</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container">
+            <div class="timeline-icon">
+                <i class="fas fa-vote-yea"></i>
+                <div class="time-label">08.01.20</div>
+            </div>
+            <div class="timeline-body">
+                <h3 class="timeline-title">Holograms Vote</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container">
+            <div class="timeline-icon">
+                <i class="fas fa-cogs"></i>
+                <div class="time-label">08.01.20</div>
+            </div>
+            <div class="timeline-body">
+                <h3 class="timeline-title">Final Testing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container">
+            <div class="timeline-icon">
+                <i class="fas fa-rocket"></i>
+                <div class="time-label">08.01.20</div>
+            </div>
+            <div class="timeline-body">
+                <h3 class="timeline-title">Launch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container">
+            <div class="timeline-icon">
+                <i class="fas fa-satellite-dish"></i>
+                <div class="time-label">08.01.20</div>
+            </div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">ISS Deployment</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container">
+            <div class="timeline-icon">
+                <i class="fas fa-satellite"></i>
+                <div class="time-label">08.01.20</div>
+            </div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Light Sail Release</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+            <div class="row">
+          <div class="col-6">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name" class="hidden">name</label>
+                <input type="text" class="form-control" id="name" placeholder="name">
+              </div>
+              <div class="form-group">
+                <label for="email" class="hidden">email</label>
+                <input type="email" class="form-control" id="email" placeholder="email">
+              </div>
+              <div class="form-group">
+                <label for="subject" class="hidden">subject</label>
+                <input type="subject" class="form-control" id="subject" placeholder="subject">
+              </div>
+              <div class="form-group">
+                <label for="message" class="hidden">message</label>
+                <textarea class="form-control" id="message" rows="3">message</textarea>
+              </div>
+            <button id="submit-contact" class-"button">Send Message</button>
+            </form>
+          </div>
