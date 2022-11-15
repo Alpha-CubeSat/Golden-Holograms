@@ -1,52 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Golden Holograms</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Golden Holograms</title>
 
 
-    <!-- Muting Site -->
-    <script>
-    [].slice.call(document.querySelectorAll('audio')).forEach(function(audio) {
+  <!-- Muting Site -->
+  <script>
+    [].slice.call(document.querySelectorAll('audio')).forEach(function (audio) {
       audio.muted = true;
     });
-    </script>
+  </script>
 
 
-    <!-- EXTERNAL JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/js/splide-extension-video.min.js"></script>
-    <script src="https://kit.fontawesome.com/f7ec263f57.js" crossorigin="anonymous"></script>
+  <!-- EXTERNAL JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/js/splide-extension-video.min.js"></script>
+  <script src="https://kit.fontawesome.com/f7ec263f57.js" crossorigin="anonymous"></script>
 
 
-    <!-- <script src="./js/slider.js"></script> -->
-    <script src="./js/scroll.js"></script>
+  <!-- <script src="./js/slider.js"></script> -->
+  <script src="./js/scroll.js"></script>
 
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="./styles/css.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/css/splide-extension-video.min.css">
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="./styles/css.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/css/splide-extension-video.min.css">
 
 
-    <!-- WEBGL -->
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGLBuilds.json", {onProgress: UnityProgress});
-    </script>
 
-    <!-- VOTING -->
+  <!-- VOTING -->
 </head>
 
 <body>
@@ -66,250 +61,148 @@
   <div class="overlay">
   </div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Golden Holograms</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse highlightTextOut" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item animated slide-in-up infinite">
-              <a class="nav-link js-scroll-trigger" href="#about">▸ <span class="navLetter">A</span>bout</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#holograms">▸ <span class="navLetter">H</span>olograms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">▸ <span class="navLetter">C</span>ontact</a>
-            </li>
-          </ul>
-        </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Golden Holograms</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse highlightTextOut" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item animated slide-in-up infinite">
+            <a class="nav-link js-scroll-trigger" href="#about">▸ <span class="navLetter">A</span>bout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="lightsail.html">▸ <span class="navLetter">L</span>ightsail</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#holograms">▸ <span class="navLetter">H</span>olograms</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">▸ <span class="navLetter">C</span>ontact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- HOME LANDING -->
-    <section class="full-page" id="page-top">
-      <!-- <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+  <!-- HOME LANDING -->
+  <section class="full-page" id="page-top">
+    <!-- <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
       <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
       <div class='layer-2 layer' data-depth='0.30' data-type='parallax'></div>
       <div class='layer-3 layer' data-depth='0.40' data-type='parallax'></div>
       <div class='layer-4 layer' data-depth='0.50' data-type='parallax'></div>
       <div class='layer-5 layer' data-depth='0.60' data-type='parallax'></div>
       <div class='layer-6 layer' data-depth='0.70' data-type='parallax'></div> -->
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-    </section>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+  </section>
 
-    <script>
-          (function() {
-        // Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
-        window.addEventListener('scroll', function(event) {
-          var depth, i, layer, layers, len, movement, topDistance, translate3d;
-          topDistance = this.pageYOffset;
-          layers = document.querySelectorAll("[data-type='parallax']");
-          for (i = 0, len = layers.length; i < len; i++) {
-            layer = layers[i];
-            depth = layer.getAttribute('data-depth');
-            movement = -(topDistance * depth);
-            translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-            layer.style['-webkit-transform'] = translate3d;
-            layer.style['-moz-transform'] = translate3d;
-            layer.style['-ms-transform'] = translate3d;
-            layer.style['-o-transform'] = translate3d;
-            layer.style.transform = translate3d;
-          }
+  <script>
+    (function () {
+      // Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
+      window.addEventListener('scroll', function (event) {
+        var depth, i, layer, layers, len, movement, topDistance, translate3d;
+        topDistance = this.pageYOffset;
+        layers = document.querySelectorAll("[data-type='parallax']");
+        for (i = 0, len = layers.length; i < len; i++) {
+          layer = layers[i];
+          depth = layer.getAttribute('data-depth');
+          movement = -(topDistance * depth);
+          translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+          layer.style['-webkit-transform'] = translate3d;
+          layer.style['-moz-transform'] = translate3d;
+          layer.style['-ms-transform'] = translate3d;
+          layer.style['-o-transform'] = translate3d;
+          layer.style.transform = translate3d;
+        }
+      });
+
+    }).call(this);
+  </script>
+
+  <!-- HOME ABOUT -->
+  <section class="full-page" id="about">
+    <div class="container">
+      <div class="content">
+        <h2><span id="about-empty-type"></span></h2>
+
+        <script>
+          var typed = new Typed("#about-empty-type", {
+            strings: [
+              "hologram in space",
+              "a Light Sail",
+              "the future of spaceflight",
+            ],
+            typeSpeed: 40,
+            backSpeed: 20,
+            loop: true,
+          });
+        </script>
+
+        <p> Alpha Cubesat is a light sail-carrying, cube-shaped satellite—and a
+          stepping stone to our nearest star system. With its holograms, tiny
+          ChipSat computers, and low-cost components, Alpha opens up new
+          techniques for interstellar messages and affordable spacecraft.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- VIDEO -->
+  <section class="video">
+    <iframe style="margin: 0 auto; width: 70%; height: 500px" src="https://www.youtube.com/embed/v1xQxAS3No4">
+    </iframe>
+  </section>
+
+  <p class="alone">
+    Alpha will carry the world’s first retroreflective, solo-flying
+    light sail—and become the trailblazer for future missions to our
+    nearest stellar neighbor, Alpha Centauri.
+  </p>
+
+
+  <!-- CONTACT -->
+  <section class="half-page" id="contact">
+    <div class="container">
+      <h2><span id="contact-empty-type"></span> Us</h2>
+
+      <script>
+        var typed = new Typed("#contact-empty-type", {
+          strings: ['Reach out to', 'Write to', 'Connect with'],
+          typeSpeed: 40,
+          backSpeed: 20,
+          loop: true
         });
+      </script>
 
-      }).call(this);
-    </script>
-
-    <!-- HOME ABOUT -->
-    <section class="full-page" id="about">
-        <div class="container">
-            <div class="content">
-                <h2><span id="about-empty-type"></span></h2>
-
-                <script>
-                  var typed = new Typed("#about-empty-type", {
-                    strings: ['Making Science Fiction', 'Science Fact'],
-                    typeSpeed: 40,
-                    backSpeed: 20,
-                    loop: true
-                  });
-                </script>
-
-                <h4>Introducing Alpha</h4>
-                <p>Alpha features one of the pioneering exhibitions of holography in space. Holographic films, created from the work of artist C Bangs, are mounted both to the walls of the CubeSat and the light sail. Drawing inspiration from Carl Sagan’s Pioneer Plaque and the Voyager Golden Record, the holograms serve as a message plaque, and are united by the common code for life of DNA. They are a reflection of humanity, and of all Earth-based life, as we venture out into the Cosmos.
-                  While the Alpha mission will remain in orbit around Earth, holographic light sails have been proposed as a promising solution for sail stabilization on a laser-propelled interstellar journey. The Alpha holograms are a means of verifying the behavior of holograms in the space environment -a technology demonstration for future missions such as Breakthrough Starshot.
-                  </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- VOTING -->
-    <section id="holograms">
-      <div class="container">
-        <h2>Welcome to <span id="vote-empty-type"></span></h2>
-
-        <script>
-          var typed = new Typed("#vote-empty-type", {
-            strings: ['Holograms', 'Space', 'the Future'],
-            typeSpeed: 40,
-            backSpeed: 20,
-            loop: true
-          });
-        </script>
-
-        <!-- WebGL -->
-
-        <div class="hologramContainer">
-
-          <div class="webgl-content">
-            <div id="unityContainer"></div>
-          </div>
-
-          <div id="hologram-btns" class="btns">
-
-
-            <div class="btn-vote-group">
-              <div class="btn-row">
-                <button id="man" class="changeHologram"><i class="fas fa-play"></i></button>
-                Man
-              </div>
-            </div>
-
-            <div class="btn-vote-group">
-            <div class="btn-row">
-              <!-- 
-                <button id="woman" class="changeHologram"><i class="fas fa-play"></i></button>
-              --> 
-
-              Woman (WIP)
-            </div>
-          </div>
-
-          <div class="btn-vote-group">
-            <div class="btn-row">
-              <button id="moth" class="changeHologram"><i class="fas fa-play"></i></button>
-              Moth
-            </div>
-          </div>
-
-
-          <div class="btn-vote-group">
-            <div class="btn-row">
-              <!-- 
-                <button id="dna" class="changeHologram"><i class="fas fa-play"></i></button>
-              --> 
-              DNA (WIP)
-            </div>
-          </div>
-
-          <div class="btn-vote-group">
-            <div class="btn-row">
-              <!--
-                <button id="leopard" class="changeHologram"><i class="fas fa-play"></i></button>
-              -->
-              Leopard (WIP)
-            </div>
-          </div>
-
-          <div class="btn-vote-group">
-            <div class="btn-row">
-              <button id="cat" class="changeHologram"><i class="fas fa-play"></i></button>
-              Cat
-              </button>
-            </div>
-          </div>
-
-
-          <div class="btn-vote-group">
-            <div class="btn-row">
-              <button id="fish" class="changeHologram"><i class="fas fa-play"></i></button>
-              Fish
-            </div>
-          </div>
-
-
-            <!-- VOTING -->
-            <script src="./js/voting.js"></script>
-
-          </div>
-
-        </div>
-
+      <div class="col-6 contact-content">
+        <p>cornellalphacubesat@gmail.com</p>
+        <p>124 Howard Rd, 450 Upson Hall <br>
+          Cornell University <br>
+          Ithaca, NY 14853</p>
+        <!-- <a class="link-button" href="about.html">Learn More</a> -->
       </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
 
-        <!-- HOME ABOUT -->
-        <section class="full-page" id="about">
-          <div class="container">
-              <div class="content">
-                  <h2><span id="about-empty-type"></span></h2>
-  
-                  <script>
-                    var typed = new Typed("#about-empty-type", {
-                      strings: ['Making Science Fiction', 'Science Fact'],
-                      typeSpeed: 40,
-                      backSpeed: 20,
-                      loop: true
-                    });
-                  </script>
-  
-                  <h4>The Next Billion Years</h4>
-                  <p>
-                    The technology demonstrated by Alpha paves the way for the grand interstellar journey to Alpha Centauri. 
-                    Light sails driven by gram-scale electronics and propelled by stronger artificial sources have the capability to reach near-relativistic velocities. 
-                    If deployed in vast quantities, a number of these sails may survive this journey, and become the first interstellar probes in the search for life outside our solar system. 
-                    Initiatives such as Breakthrough Starshot seek to bring this concept to reality, and have begun to address the primary technical challenges that lie ahead.
-                    <h5><a href="https://www.spacecraftresearch.com/alpha-cubesat">Learn More</a></h5>
-                  </p>
-              </div>
-          </div>
-      </section>
-
-
-    <!-- CONTACT -->
-    <section class="full-page" id="contact">
-      <div class="container">
-        <h2><span id="contact-empty-type"></span> Us</h2>
-
-        <script>
-          var typed = new Typed("#contact-empty-type", {
-            strings: ['Reach out to', 'Write to', 'Connect with'],
-            typeSpeed: 40,
-            backSpeed: 20,
-            loop: true
-          });
-        </script>
-
-          <div class="col-6 contact-content">
-              <p>cornellalphacubesat@gmail.com</p>
-              <p>124 Howard Rd, 450 Upson Hall <br>
-                Cornell University <br>
-                Ithaca, NY 14853</p>
-              <!-- <a class="link-button" href="about.html">Learn More</a> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
 
-    <!-- Plugin JavaScript -->
-    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+  <!-- Plugin JavaScript -->
+  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
 
-    <!-- SCROLLING NAV JAVASCRIPT -->
-    <!-- <script src="js/scrolling-nav.js"></script> -->
+  <!-- SCROLLING NAV JAVASCRIPT -->
+  <!-- <script src="js/scrolling-nav.js"></script> -->
 
 </body>
 
