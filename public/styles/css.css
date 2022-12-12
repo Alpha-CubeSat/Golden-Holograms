@@ -346,7 +346,7 @@ div.carousel {
   align-items: center;
 }
 
-#about .container {
+.about .container {
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
   border-radius: 75px 0 75px 0;
   border-style: solid;
@@ -356,19 +356,19 @@ div.carousel {
 }
 
 
-#about .content {
+.about .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 50px;
 }
 
-#about .content h2,
-#about .content p {
+.about .content h2,
+.about .content p {
   color: #fff;
 }
 
-#about .content h4 {
+.about .content h4 {
   color: rgba(232, 117, 36, 1);
 }
 
@@ -864,7 +864,7 @@ div.carousel {
 }
 
 @media only screen and (max-width: 750px) {
-  #about .container {
+  .about .container {
     margin: 50px;
   }
 }
