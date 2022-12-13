@@ -231,6 +231,10 @@ img.small {
   margin: 0 auto;
 }
 
+img.footer {
+  width: 100%
+}
+
 .alone {
   width: 100%;
   padding-left: 20%;
