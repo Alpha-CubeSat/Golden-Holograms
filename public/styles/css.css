@@ -201,7 +201,6 @@ body {
 }
 
 .full-page {
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -215,6 +214,14 @@ img {
   margin: 0 auto;
 }
 
+img.alone {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 img.small {
   width: 40%;
   margin: 0 auto;
@@ -224,7 +231,7 @@ img.small {
   width: 100%;
   padding-left: 20%;
   padding-right: 20%;
-  margin-top: 30px;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -353,6 +360,8 @@ div.carousel {
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 0 0 8px 8px;
   max-width: 750px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 
@@ -700,6 +709,7 @@ div.carousel {
 }
 
 #contact .container {
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
