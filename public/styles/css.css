@@ -347,6 +347,17 @@ div.carousel {
   background-position: top center;
 }
 
+.layer-page {
+  background-position: bottom center;
+  background-size: cover;
+  /* height: 200rem; */
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  background-image: url("../images/bg_new.png");
+  /* background-position: top center; */
+}
+
 .container {
   display: flex;
   justify-content: center;
