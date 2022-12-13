@@ -23,6 +23,10 @@
 
 
 /* FONT CUSTOMIZATION */
+em {
+  color: #E87524;
+  font-style: normal;
+}
 
 body {
   font-family: ShareTech;
