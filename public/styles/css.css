@@ -193,6 +193,15 @@ body {
   transform: translateX(0px);
 }
 
+#dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  z-index: 1;
+  position: absolute;
+  top: 27px
+}
+
 
 
 
