@@ -102,6 +102,7 @@
                         <a class="nav-link js-scroll-trigger" href="#contact">▸ <span
                                 class="navLetter">C</span>ontact</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -109,138 +110,91 @@
 
 
     <!-- HOME ABOUT -->
-    <section class="full-page about" id="page-top">
-        <div class="alone">
-            <div class="container">
-                <div class="content">
-                    <h2>Holograms</h2>
-                    <p>Above its solar panels, Alpha CubeSat will carry the <em>first pieces of holographic art in
-                            space.</em>
-                    </p>
-                </div>
+
+    <div class="alone">
+
+        <h2>What makes Alpha special?</h2>
+    </div>
+    <p class="alone">
+        Alpha CubeSat’s main mission objective is to deploy a light sail. But the CubeSat itself has a lot of innovation
+        to offer!
+
+        Alpha CubeSat uses easy-to-obtain components, and its structure is almost entirely 3D-printed. These aspects
+        make Alpha a trendsetter for low-cost CubeSat technologies.
+    </p>
+    <img src="images/components1.png"
+        alt="Action shot of Alpha team members Josh, Ally, and Andy assembling the CubeSat (at right) based on its prototype (at left).">
+    <p class="alone">
+        As soon as Alpha CubeSat deploys from the International Space Station, it will stabilize and align itself with
+        the Earth’s magnetic field. This will help us easily contact the CubeSat, and allow for a smooth deployment of
+        the light sail. The CubeSat will stabilize itself using only magnetorquers—coils that produce their own magnetic
+        field, which then interacts with Earth’s.</p>
+    <img src="images/components2.png"
+        alt="Action shot of the electronics stack being integrated into the CubeSat. The RockBLOCK is the shiny metal box at left; one of the copper magnetorquers can be seen on the CubeSat’s right side.">
+    <p class="alone">
+        Another innovation is the use of a RockBlock transmitter with an Iridium modem. This modem allows us to
+        communicate with the CubeSat over a satellite network. We don’t need to build any receiving or transmitting
+        stations for the CubeSat on Earth—we can just send commands by connecting over the Internet!
+
+        After we release the light sail, the CubeSat will take a picture to make sure all went well. From then on, the
+        sailing portion of the mission will rely on the light sail’s ChipSats.
+    </p>
+
+    <div class="alone">
+        <h2>Getting Technical:
+            CubeSat Components</h2>
+    </div>
+    <div class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </div>
-    </section>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/comp1.png"
+                        alt="Alpha CubeSat has six solar panels, each of which feed into the Sparkfun SunnyBuddy, a solar charge controller for the lithium-ion battery."
+                        class="carousel">
 
-    <section class="half-page about">
-        <div class="alone">
-            <div class="container">
-                <div class="content">
-                    <h2>What kind of “holograms”? </h2>
-                    <p>When we say “holograms,” we don’t mean Princess Leia or after-death Elvis Presley concerts. Those
-                        kinds use movie projectors and screens.
-
-                        Instead, Alpha’s holograms are similar to the kind on trading cards and passports. These images
-                        change when you tilt your head from side-to-side, either to reveal another picture or to show
-                        another side of a 3D object.</p>
                 </div>
+                <div class="carousel-item">
+                    <img src="images/comp2.png"
+                        alt=" Our flight computer is a Teensy 3.5 microcontroller (long green rectangle in the middle of this image). It features a 32-bit 120 MHz ARM Cortex-M4 processor and a microSD card, which provides data storage prior to downlink."
+                        class="carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/comp3.png"
+                        alt="Our spacecraft sensors consist of voltage-divider setups and hobbyist breakout boards. The Attitude Control System, for example, uses a Sparkfun breakout board (red, on the right of image). As a 9-DOF inertial measurement unit (IMU), it provides 3-axis accelerometer, gyroscope, and magnetometer data to the flight computer."
+                        class="carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/comp4.png"
+                        alt="The CubeSat is stabilized using just three torque rods assembled in-house from copper wire. Two Sparkfun Motor Driver Dual H-Bridges send current through these magnetorquers."
+                        class="carousel">
+                </div>
+
             </div>
-        </div>
-    </section>
-    <!-- TODO: add holograms here -->
-
-
-    <!-- WebGL -->
-
-    <div class="hologramContainer">
-
-        <div class="webgl-content">
-            <div id="unityContainer"></div>
-        </div>
-
-        <div id="hologram-btns" class="btns">
-
-            <div class="btn-vote-group">
-                <div class="btn-row">
-                    <button id="moth" class="changeHologram"><i class="fas fa-play"></i></button>
-                    Moth
-                </div>
-            </div>
-
-            <div class="btn-vote-group">
-                <div class="btn-row">
-                    <button id="fish" class="changeHologram"><i class="fas fa-play"></i></button>
-                    Fish
-                </div>
-            </div>
-
-            <div class="btn-vote-group">
-                <div class="btn-row">
-                    <button id="leopard" class="changeHologram"><i class="fas fa-play"></i></button>
-                    Leopard (WIP)
-                </div>
-            </div>
-
-
-            <div class="btn-vote-group">
-                <div class="btn-row">
-                    <button id="woman" class="changeHologram"><i class="fas fa-play"></i></button>
-
-                    Woman (WIP)
-                </div>
-            </div>
-
-            <div class="btn-vote-group">
-                <div class="btn-row">
-                    <button id="man" class="changeHologram"><i class="fas fa-play"></i></button>
-                    Man
-                </div>
-            </div>
-
-
-            <section class="half-page about">
-                <div class="container">
-                    <div class="content">
-                        <h2>Great for interstellar messages!</h2>
-                        <p>Holograms offer grand possibilities. Imagine a hologram with five images: it could hold
-                            five
-                            times the information of a single flat message plaque!
-
-                            Now up that number to <em>thousands.</em>
-
-                            Alpha will only have five 3D pictures above its solar panels. But future space holograms
-                            might
-                            contain thousands of images—artwork and photos from across history.
-
-                        </p>
-                    </div>
-                </div>
-            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 
-    <p class="alone">Alpha’s holograms are exposures of clay scupltures by artist C Bangs. The moth, fish,
-        woman, man,
-        and cat serve
-        as ambassadors of life.
+    <p class="alone">Alpha CubeSat’s parts are low-cost and commercially available—making space much less of a giant
+        leap!</p>
 
-        Alpha will be staying just above Earth. But its descendants may be speeding through Alpha Centauri, our
-        nearest
-        star system. Like the Voyager Golden Records and the Pioneer Plaques before us, we can’t help but send a
-        part of
-        ourselves into the vastness. </p>
-
-
-
-    <section class="full-page about">
-        <div class="alone">
-            <div class="container">
-                <div class="content">
-                    <h2>Holograms are helpful, too</h2>
-                    <p>Holograms have applications beyond artwork. Future sails may have a hologram of a sphere
-                        across
-                        their entire surface, which would help stabilize the sail in a laser beam. Laser beams
-                        are the
-                        method of choice for accelerating a light sail up to 20% the speed of light.
-
-                        By proving they can function in space, Alpha CubeSat hopes to pave the way for holograms
-                        on
-                        light sails—as well as holograms that carry a piece of home into the cosmos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <img class="footer" src="images/footer_holograms.png" alt="">
+    <img class="footer" src="images/footer_components.png" alt="">
 
     <!-- CONTACT -->
     <section id="contact">
