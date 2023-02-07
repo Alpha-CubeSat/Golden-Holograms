@@ -34,7 +34,7 @@ body {
 
 
 p {
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 
@@ -230,8 +230,8 @@ img {
 img.alone {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  padding-left: 10%;
+  width: 90%;
+  padding-left: 20%;
   padding-right: 10%;
 }
 
@@ -252,6 +252,9 @@ img.footer {
   text-align: center;
 }
 
+h2.alone {
+  margin-top: 7%;
+}
 
 /*CAROUSEL CLASSES*/
 .carousel {
