@@ -216,6 +216,7 @@ body {
 .full-page {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .video {
@@ -735,6 +736,18 @@ div.carousel {
 
 .row .option:last-of-type {
   border-right: none;
+}
+
+/* HOME */
+.home-title {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.home-title h1 {
+  font-size: 34pt;
 }
 
 
