@@ -740,9 +740,10 @@ div.carousel {
 
 /* HOME */
 .home-title {
-  height: 80vh;
+  height: 50vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 30vh;
 }
 
@@ -946,6 +947,14 @@ div.carousel {
   p {
     font-size: 20px;
     color: white;
+  }
+
+  .home-title {
+    height: 40vh;
+    padding: 0px 50px;
+  }
+  .home-title h1 {
+    font-size: 28pt;
   }
 }
 
