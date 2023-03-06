@@ -927,16 +927,23 @@ div.carousel {
 
 @media only screen and (max-width: 750px) {
   .about .alone {
-    padding: 10%;
+    padding: 0%;
+    margin: 10vh 0px;
   }
 
   .about .container {
     background: none;
     border: none;
-    max-width: 150%;
     margin-top: 0%;
     margin-bottom: 0%;
-    padding: 0%;
+    padding: 0px;
+    border-radius: none;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
   }
 
   .about .content h2,
@@ -951,6 +958,7 @@ div.carousel {
 
   .home-title {
     height: 40vh;
+    width: 100%;
     padding: 0px 50px;
   }
   .home-title h1 {
@@ -958,7 +966,7 @@ div.carousel {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 501px) {
   .about .alone {
     padding: 0%;
   }
@@ -974,17 +982,22 @@ div.carousel {
 
   .about .content h2,
   .about .content p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   h1,
   h2,
   h3 {
     font-size: 20px;
+  }
+
+  .alone {
+    padding: 0% 5%;
+    text-align: center;
   }
 
   img.alone {
