@@ -217,6 +217,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
 }
 
 .video {
@@ -261,15 +262,19 @@ h2.alone {
 
 /*CAROUSEL CLASSES*/
 .carousel {
+  width: 90vw;
+  margin: 5% auto 0px auto;
   padding: 0px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .carousel-inner {
   height: 80vh;
+  width: 90vw;
   margin-top: 0;
   display: flex;
   align-items: center;
+  padding-left: 10vw;
 }
 
 .carousel-item {
@@ -280,17 +285,6 @@ h2.alone {
 p.carousel {
   padding-left: 10%;
   padding-right: 10%;
-}
-
-div.carousel {
-  /* padding: 0 0 0 15%; */
-  width: 90vw;
-  background-color: #42D6CA;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  text-align: center;
-  display: flex;
-  align-content: center;
 }
 
 /* .carousel-control-prev {
@@ -932,16 +926,23 @@ div.carousel {
 
 @media only screen and (max-width: 750px) {
   .about .alone {
-    padding: 10%;
+    padding: 0%;
+    margin: 10vh 0px;
   }
 
   .about .container {
     background: none;
     border: none;
-    max-width: 150%;
     margin-top: 0%;
     margin-bottom: 0%;
-    padding: 0%;
+    padding: 0px;
+    border-radius: none;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
   }
 
   .about .content h2,
@@ -956,6 +957,7 @@ div.carousel {
 
   .home-title {
     height: 40vh;
+    width: 100%;
     padding: 0px 50px;
   }
   .home-title h1 {
@@ -963,7 +965,7 @@ div.carousel {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 501px) {
   .about .alone {
     padding: 0%;
   }
@@ -979,17 +981,22 @@ div.carousel {
 
   .about .content h2,
   .about .content p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   h1,
   h2,
   h3 {
     font-size: 20px;
+  }
+
+  .alone {
+    padding: 0% 5%;
+    text-align: center;
   }
 
   img.alone {
