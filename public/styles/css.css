@@ -293,7 +293,7 @@ p.carousel {
 
 .carousel-caption {
   background-color: #0a092682;
-  /* margin-bottom: 5%; */
+  margin-bottom: 3%;
 }
 
 /* .carousel-control-prev {
@@ -1033,5 +1033,10 @@ p.carousel {
   .carousel-item {
     width: 100%;
     height: auto;
+  }
+
+  .carousel-caption {
+    background-color: #0a092682;
+    margin-bottom: 0;
   }
 }
