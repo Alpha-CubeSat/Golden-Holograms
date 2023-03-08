@@ -267,16 +267,15 @@ h2.alone {
 
 /*CAROUSEL CLASSES*/
 .carousel {
-  /* width: 50vw; */
-  height: 90vh;
-  margin: 5% auto 0px auto;
-  padding: 0px;
+  height: 90%;
+  margin: 5% auto 5% auto;
+  padding: 10px;
   text-align: center;
 }
 
 .carousel-inner {
-  height: 100%;
-  width: 100vw;
+  height: 90vh;
+  width: auto;
   margin-top: 0;
   display: flex;
   /* align-items: center; */
@@ -285,7 +284,9 @@ h2.alone {
 }
 
 .carousel-item {
-  /* height: 100%; */
+  height: 80%;
+  width: 100%;
+  /* height: auto; */
   /* width: auto;   */
   /* height: 100%; */
   /* width: 70%; */
@@ -1027,20 +1028,20 @@ p.carousel {
     margin: 5% auto 0px auto;
     padding: 0px; */
     text-align: center;
-    width: 50vh;
-    height: 90%;
+    margin-top: 2%;
   }
 
   .carousel-inner {
     /* width: 100%; */
-    margin-top: 0;
-    display: flex;
-    align-items: center;
+    height: 30vh;
+    width: auto
+      /* align-items: center; */
   }
 
   .carousel-item {
+    /* width: 100%; */
+    height: 80%;
     width: 100%;
-    height: auto;
   }
 
   .carousel-caption {
