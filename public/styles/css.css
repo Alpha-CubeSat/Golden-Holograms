@@ -128,8 +128,12 @@ body {
 
 /* NAVIGATION BAR */
 
-.navbar-custom {
+.mainNav {
   background-color: rgba(11, 4, 41, 0.5);
+}
+
+.navbar-custom {
+  background-color: rgba(11, 4, 41, 1);
   text-transform: lowercase;
   font-size: 18px;
   letter-spacing: 1px;
@@ -142,6 +146,7 @@ body {
 
 .navbar-collapse a {
   color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(11, 4, 41, 1);
 }
 
 
@@ -160,7 +165,7 @@ body {
 
 .navbar .active {
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-item {
@@ -199,7 +204,7 @@ body {
   margin-left: 10px;
   z-index: 1;
   position: absolute;
-  top: 27px
+  top: 27px;
 }
 
 
@@ -261,7 +266,7 @@ h2.alone {
 }
 
 /*CAROUSEL CLASSES*/
-.carousel{
+.carousel {
   /* width: 50vw; */
   height: 90vh;
   margin: 5% auto 0px auto;
@@ -969,6 +974,7 @@ p.carousel {
     width: 100%;
     padding: 0px 50px;
   }
+
   .home-title h1 {
     font-size: 28pt;
   }
@@ -1021,15 +1027,17 @@ p.carousel {
     margin: 5% auto 0px auto;
     padding: 0px; */
     text-align: center;
+    width: 50vh;
+    height: 90%;
   }
-  
+
   .carousel-inner {
     /* width: 100%; */
     margin-top: 0;
     display: flex;
     align-items: center;
   }
-  
+
   .carousel-item {
     width: 100%;
     height: auto;
