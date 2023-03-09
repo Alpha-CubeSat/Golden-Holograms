@@ -34,7 +34,7 @@ body {
 
 
 p {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
 
@@ -267,29 +267,21 @@ h2.alone {
 
 /*CAROUSEL CLASSES*/
 .carousel {
-  height: 90%;
+  height: 90vh;
   margin: 5% auto 5% auto;
   padding: 10px;
   text-align: center;
 }
 
 .carousel-inner {
-  height: 90vh;
+  height: 100%;
   width: auto;
   margin-top: 0;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* padding-left: 10vw; */
 }
 
 .carousel-item {
-  height: 80%;
-  width: 100%;
-  /* height: auto; */
-  /* width: auto;   */
-  /* height: 100%; */
-  /* width: 70%; */
+  width: 90%;
 }
 
 p.carousel {
@@ -299,7 +291,12 @@ p.carousel {
 
 .carousel-caption {
   background-color: #0a092682;
-  margin-bottom: 3%;
+  margin-top: 50px;
+}
+
+.carousel-control-prev {
+  background-color: ;
+  border: none;
 }
 
 /* .carousel-control-prev {
@@ -1028,7 +1025,7 @@ p.carousel {
   }
 
   .carousel-inner {
-    height: 70vh;
+    height: 50vh;
   }
 
   .carousel-item {
