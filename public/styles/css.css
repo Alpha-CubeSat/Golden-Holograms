@@ -1023,23 +1023,15 @@ p.carousel {
   }
 
   .carousel {
-    /* width: 100%;
-    height: auto;
-    margin: 5% auto 0px auto;
-    padding: 0px; */
     text-align: center;
     margin-top: 2%;
   }
 
   .carousel-inner {
-    /* width: 100%; */
-    height: 30vh;
-    width: auto
-      /* align-items: center; */
+    height: 70vh;
   }
 
   .carousel-item {
-    /* width: 100%; */
     height: 80%;
     width: 100%;
   }
@@ -1047,5 +1039,9 @@ p.carousel {
   .carousel-caption {
     background-color: #0a092682;
     margin-bottom: 0;
+  }
+
+  .carousel-caption h5 {
+    font-size: 10pt;
   }
 }
