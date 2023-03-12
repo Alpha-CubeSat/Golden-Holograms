@@ -967,7 +967,9 @@ p.carousel {
   }
 
   .home-title {
-    height: 40vh;
+    /* height: 40vh; */
+    margin-top: 20vh;
+    margin-bottom: 0vh;
     width: 100%;
     padding: 0px 50px;
   }
