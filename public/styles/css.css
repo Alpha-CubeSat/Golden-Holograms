@@ -968,8 +968,8 @@ p.carousel {
 
   .home-title {
     height: auto;
-    margin-top: 20vh;
-    margin-bottom: 10vh;
+    margin-top: 40vh;
+    margin-bottom: 0vh;
     width: 100%;
     padding: 0px 50px;
   }
@@ -1018,6 +1018,10 @@ p.carousel {
     margin-right: auto;
     width: 100%;
     padding: 5%;
+  }
+
+  #about-empty-type {
+    height: 2rem;
   }
 
   .carousel {
