@@ -268,9 +268,13 @@ h2.alone {
 /*CAROUSEL CLASSES*/
 .carousel {
   height: 90vh;
+  width: 100%;
   margin: 5% auto 5% auto;
   padding: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-inner {
@@ -292,11 +296,6 @@ p.carousel {
 .carousel-caption {
   background-color: #0a092682;
   margin-top: 50px;
-}
-
-.carousel-control-prev {
-  background-color: ;
-  border: none;
 }
 
 /* .carousel-control-prev {
@@ -691,7 +690,7 @@ p.carousel {
   }
 }
 
-.changeHologram:hover {}
+/* .changeHologram:hover {} */
 
 .vote {
   display: flex;
@@ -715,13 +714,13 @@ p.carousel {
 }
 
 
-.splide__slide div {
-  /* display: flex;
+/* .splide__slide div {
+  display: flex;
   justify-content: center;
-  align-items: center; */
-}
+  align-items: center;
+} */
 
-.splide__slide.is-active {}
+/* .splide__slide.is-active {} */
 
 
 
