@@ -968,7 +968,7 @@ p.carousel {
 
   .home-title {
     height: auto;
-    margin-top: 41vh;
+    margin-top: 42vh;
     margin-bottom: 0vh;
     width: 100%;
     padding: 0px 50px;
@@ -1020,7 +1020,7 @@ p.carousel {
     padding: 5%;
   }
 
-  #about-empty-type {
+  .empty-type {
     height: 20px;
   }
 
