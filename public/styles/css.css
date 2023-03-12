@@ -416,7 +416,7 @@ p.carousel {
   border-width: 0 0 8px 8px;
   max-width: 750px;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 0;
 }
 
 
@@ -1051,6 +1051,10 @@ p.carousel {
 
   .carousel-caption h5 {
     font-size: 10pt;
+  }
+
+  .video {
+    margin-bottom: 10px;
   }
 
   .video iframe {
