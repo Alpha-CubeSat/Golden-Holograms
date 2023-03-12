@@ -229,6 +229,12 @@ body {
   display: flex;
 }
 
+.video iframe {
+  margin: 0 auto; 
+  width: 70%; 
+  height: 500px;
+}
+
 img {
   width: 100%;
   margin: 0 auto;
@@ -1045,5 +1051,11 @@ p.carousel {
 
   .carousel-caption h5 {
     font-size: 10pt;
+  }
+
+  .video iframe {
+    /* margin: 0 auto;  */
+    width: 100%;
+    height: 250px;
   }
 }
