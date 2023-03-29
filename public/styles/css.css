@@ -230,8 +230,8 @@ body {
 }
 
 .video iframe {
-  margin: 0 auto; 
-  width: 70%; 
+  margin: 0 auto;
+  width: 70%;
   height: 500px;
 }
 
@@ -287,6 +287,7 @@ h2.alone {
   height: 100%;
   width: auto;
   margin-top: 0;
+  margin-left: 10%;
   display: flex;
 }
 
