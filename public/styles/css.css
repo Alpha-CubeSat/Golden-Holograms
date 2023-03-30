@@ -49,6 +49,11 @@ h4 {
   color: rgba(246, 162, 15, 0.75);
 }
 
+.margin-top-20 {
+  padding-top: 10px;
+  margin: 4000px 0px;
+}
+
 
 /* BACKGROUND */
 body {
@@ -264,6 +269,14 @@ img.footer {
   padding-left: 20%;
   padding-right: 20%;
   margin-top: 5%;
+  text-align: center;
+}
+
+.alone-small-margin {
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 2%;
   text-align: center;
 }
 
@@ -760,7 +773,7 @@ p.carousel {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30vh;
+  margin: 30vh 0px 45vh 0px;
 }
 
 .home-title h1 {
