@@ -232,6 +232,7 @@ body {
 
 .video {
   display: flex;
+  margin-top: 5%;
 }
 
 .video iframe {
