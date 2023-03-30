@@ -286,25 +286,29 @@ h2.alone {
 
 /*CAROUSEL CLASSES*/
 .carousel {
-  height: 90vh;
-  width: auto;
-  /* margin: 5% auto 5% auto; */
+  /* height: auto; */
+  /* height: 50vh; */
+  width: 90%;
+  /* margin-bottom: 5%; */
+  margin: 5% auto 5% auto;
   /* padding: 10px; */
-  text-align: center;
+  /* text-align: center; */
   /* display: flex; */
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: center; */
 }
 
 .carousel-inner {
   /* height: 100%;
   width: auto; */
-  margin-top: 0;
-  display: flex;
+  /* margin-top: 0;
+  display: flex; */
 }
 
 .carousel-item {
   /* width: 90%; */
+  /* height: 100%; */
+  /* width: auto; */
 }
 
 p.carousel {
@@ -1044,7 +1048,7 @@ p.carousel {
   }
 
   .carousel {
-    height: 50vh;
+    /* height: 50vh; */
     /* text-align: center;
     margin-top: 2%; */
   }
@@ -1059,12 +1063,11 @@ p.carousel {
   }
 
   .carousel-caption {
-    background-color: #0a092682;
-    margin-bottom: 0;
+    background: none;
   }
 
   .carousel-caption h5 {
-    font-size: 10pt;
+    font-size: 0pt;
   }
 
   .video {
