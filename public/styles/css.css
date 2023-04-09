@@ -1043,18 +1043,12 @@ p.carousel {
   }
 
   .carousel {
-    /* height: 50vh; */
-    /* text-align: center;
-    margin-top: 2%; */
   }
 
   .carousel-inner {
-    /* height: 50vh; */
   }
 
   .carousel-item {
-    /* height: 80%;
-    width: 100%; */
   }
 
   .carousel-caption {
@@ -1066,7 +1060,7 @@ p.carousel {
   }
 
   .video {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
 
   .video iframe {
