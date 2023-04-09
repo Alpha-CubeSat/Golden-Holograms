@@ -287,39 +287,33 @@ h2.alone {
 
 /*CAROUSEL CLASSES*/
 .carousel {
-  /* height: auto; */
-  /* height: 50vh; */
   width: 90%;
-  /* margin-bottom: 5%; */
-  margin: 5% auto 5% auto;
-  /* padding: 10px; */
-  /* text-align: center; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  margin: 0 auto 5% auto;
 }
 
 .carousel-inner {
-  /* height: 100%;
-  width: auto; */
-  /* margin-top: 0;
-  display: flex; */
 }
 
 .carousel-item {
-  /* width: 90%; */
-  /* height: 100%; */
-  /* width: auto; */
+  padding: 0 10%;
 }
 
 p.carousel {
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding: 3% 10% 0 10%; */
+  padding: 10%;
+}
+
+/* to invert the color of the controls */
+.carousel-control-next,
+.carousel-control-prev {
+    /* filter: invert(100%); */
 }
 
 .carousel-caption {
   background-color: #0a092682;
   margin-top: 50px;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 /* .carousel-control-prev {
