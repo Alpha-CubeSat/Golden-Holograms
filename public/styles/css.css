@@ -291,8 +291,7 @@ h2.alone {
   margin: 0 auto 5% auto;
 }
 
-.carousel-inner {
-}
+.carousel-inner {}
 
 .carousel-item {
   padding: 0 10%;
@@ -306,7 +305,7 @@ p.carousel {
 /* to invert the color of the controls */
 .carousel-control-next,
 .carousel-control-prev {
-    /* filter: invert(100%); */
+  /* filter: invert(100%); */
 }
 
 .carousel-caption {
@@ -951,6 +950,11 @@ p.carousel {
     padding-left: 0;
     text-align: center;
   }
+
+  .layer-6 {
+    margin-top: -17%;
+    margin-left: 8%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -1042,14 +1046,16 @@ p.carousel {
     height: 55px;
   }
 
-  .carousel {
+  .layer-6 {
+    margin-top: -20%;
+    margin-left: 10%;
   }
 
-  .carousel-inner {
-  }
+  .carousel {}
 
-  .carousel-item {
-  }
+  .carousel-inner {}
+
+  .carousel-item {}
 
   .carousel-caption {
     background: none;
