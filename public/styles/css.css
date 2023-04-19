@@ -49,6 +49,10 @@ h4 {
   color: rgba(246, 162, 15, 0.75);
 }
 
+h5.mobile {
+  display: none;
+}
+
 .margin-top-20 {
   padding-top: 10px;
   margin: 4000px 0px;
@@ -1030,6 +1034,14 @@ p.carousel {
     font-size: 20px;
   }
 
+  h5.desktop {
+    display: none;
+  }
+
+  h5.mobile {
+    display: block;
+  }
+
   .alone {
     padding: 0% 5%;
     text-align: center;
@@ -1051,18 +1063,19 @@ p.carousel {
     margin-left: 10%;
   }
 
-  .carousel {}
+  .carousel {
+    width: 100%;
+  }
 
-  .carousel-inner {}
 
   .carousel-item {}
 
   .carousel-caption {
-    background: none;
+    /* background: none; */
   }
 
   .carousel-caption h5 {
-    font-size: 0pt;
+    font-size: 10pt;
   }
 
   .video {
