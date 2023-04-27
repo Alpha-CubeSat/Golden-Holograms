@@ -1014,7 +1014,7 @@ p.carousel {
     background: none;
     border: none;
     max-width: 100%;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     margin-bottom: -5%;
     padding: 0%;
   }
@@ -1040,10 +1040,6 @@ p.carousel {
 
   h5.mobile {
     display: block;
-  }
-
-  .margin-top {
-    margin-top: 0px;
   }
 
   .alone {
