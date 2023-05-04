@@ -1008,6 +1008,7 @@ p.carousel {
 @media only screen and (max-width: 501px) {
   .about .alone {
     padding: 0%;
+    margin-bottom: -10%;
   }
 
   .about .container {
@@ -1015,7 +1016,6 @@ p.carousel {
     border: none;
     max-width: 100%;
     /* margin-top: 2%; */
-    margin-bottom: -5%;
     padding: 0%;
   }
 
