@@ -1024,6 +1024,14 @@ p.carousel {
     font-size: 18px;
   }
 
+  h2.spacing-title {
+    margin-top: 20%;
+  }
+
+  p.spacing-p {
+    margin-top: 20%;
+  }
+
   p {
     font-size: 18px;
   }
@@ -1069,7 +1077,7 @@ p.carousel {
     height: 19em;
   }
 
-  .carousel-item img{
+  .carousel-item img {
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -1085,7 +1093,7 @@ p.carousel {
     background-color: transparent;
     margin-top: 10px;
     margin-bottom: 30px;
-}
+  }
 
   .video {
     margin-bottom: 60px;
