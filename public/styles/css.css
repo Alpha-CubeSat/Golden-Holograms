@@ -599,13 +599,19 @@ p.carousel {
 .hologramContainer {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  align-items: center;
+  column-gap: 10%;
 }
 
-#unityContainer {
+#unityContainer{
   max-width: 900px;
 }
 
+#hologram-btns div{
+  display: flex;
+  max-width: 150px;
+  justify-content: left;
+}
 
 .btns {
   display: flex;
