@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Alpha CubeSat Holograms</title>
+
+
+    <!-- Muting Site -->
+    <script>
+        [].slice.call(document.querySelectorAll('audio')).forEach(function (audio) {
+            audio.muted = true;
+        });
+    </script>
+
+
+    <!-- EXTERNAL JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/    @2.4.21/dist/js/splide.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/js/splide-extension-video.min.js"></script>
+    <script src="https://kit.fontawesome.com/f7ec263f57.js" crossorigin="anonymous"></script>
+
+
+    <!-- <script src="./js/slider.js"></script> -->
+    <script src="./js/scroll.js"></script>
+
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./styles/css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/css/splide-extension-video.min.css">
+
+
+    <!-- WEBGL -->
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGLBuilds.json", { onProgress: UnityProgress });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class='layer-page  layer' data-depth='1' data-type='parallax'></div>
+        <!-- <div class='layer-2 layer' data-depth='1' data-type='parallax'></div>
+        <div class='layer-3 layer' data-depth='0.9' data-type='parallax'></div>
+        <div class='layer-4 layer' data-depth='0.8' data-type='parallax'></div>
+        <div class='layer-5 layer' data-depth='0.7' data-type='parallax'></div>
+        <div class='layer-6 layer' data-depth='0.6' data-type='parallax'></div> -->
+    </div>
+
+    <div class="overlay">
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html">ALPHA CUBESAT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse highlightTextOut" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item animated slide-in-up infinite">
+                        <a class="nav-link js-scroll-trigger" href="index.html">▸ <span
+                                class="navLetter">A</span>bout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="lightsail.html">▸ <span
+                                class="navLetter">L</span>ightsail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="holograms.html">▸ <span
+                                class="navLetter">H</span>olograms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="chipsats.html">▸ <span
+                                class="navLetter">C</span>hipsats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="components.html">▸ <span
+                                class="navLetter">C</span>ubesat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="history.html">▸ <span class="navLetter">H</span>istory</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">▸ <span
+                                class="navLetter">C</span>ontact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>  
+    </nav>
+
+
+    <!-- HOME ABOUT -->
+
+
+    <section class="full-page about" id="page-top">
+        <div class="alone">
+            <div class="container">
+                <div class="content">
+                    <h2 class="mb-5">History of Alpha CubeSat</h2>
+                    <p>Alpha CubeSat is <em>Seven</em> years in the making!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    <h2 class="alone">2016: The early days, from “CayugaSat” to “Starshot Alpha”</h2>
+    <p class="alone"> 
+
+    The Alpha CubeSat project began with Isabelle Dawson, a high schooler based in the local Ithaca area. 
+    Inspired by a lecture from Cornell Mechanical Engineering Professor Mason Peck, Dawson put together a 
+    group of her classmates to take part in an international engineering competition focused on CubeSats.</p>
+
+    <p class="alone"> After their “CayugaSat” became one of the winners in 2016, 
+    Dawson joined forces with engineering students at Cornell and mentors such as Andy Filo. 
+    In one whirlwind summer, the “Starshot Ten” team made great strides under Prof. Peck, 
+    completing three sides of solar panels. But there was still seven years of work remaining…</p>
+
+
+<!--
+
+    USE LATER
+
+    </section>
+    <div class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/chipsat1_same_height.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>The most recent “Monarch” design</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chipsat2_same_height.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>An older “Sprite” design, showing its components.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chipsat3_same_height.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>ChipSat fabrication in progress with team member Vuthy Vey!</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chipsat4_same_height.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Position of ChipSats on Alpha’s sail: two on each side for a total of four.</h5>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+-->
+
+<!--
+
+    <div>
+        <p class="alone">
+            Cornell’s Space Systems Design Studio has been developing ChipSats since 2006. The “Monarch”
+            is
+            its latest design, increasingly thinner but slightly wider (now 5 by 5 centimeters, compared
+            to
+            3 by 3 “Sprites”).</p>
+    </div>
+
+
+
+    <p class="alone">The electronics are printed on Kapton substrate, a flexible material allowing
+        the chips to be
+        under
+        3 grams each. Alpha’s ChipSats are an important step along the way to interstellar computers
+        weighing less
+        than
+        a gram.
+
+        On Alpha’s sailing mission, the ChipSats will take position, altitude, and gyroscope
+        measurements, then send
+        the
+        data back to Earth through a radio transmitter.</p>
+
+-->
+
+    <!-- todo image -->
+    <div>
+        <div class="carousel">
+        <div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Alpha_2016_Team 1.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>The "Starshot Ten" in summer of 2016.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <h2 class="alone">2016 - 2019</h2>
+    <p class="alone"> After the “Starshot Ten” summer, Alpha CubeSat made slow and steady progress.</p>
+
+    <p class="alone"> We started to develop our Attitude Control Systems, which help control 
+    the orientation of the spacecraft (harder than you might think in microgravity)! 
+    We took on new members for flight software and for the development of our radio station software on the ground.</p>
+
+    <p class="alone">Holographic art entered the picture, our ChipSats underwent a major upgrade 
+    from the green “Sprite” generation to the orange “Monarchs,” and our sail became retroreflective!
+    </p>
+
+    <p class="alone">Despite these improvements, the full prototype CubeSat remained unfinished. 
+    Circuit boards were designed but not yet thoroughly tested. In the meantime, we applied 
+    to NASA’s CubeSat Launch Initiative, and in spring of 2019 we won a slot!
+    </p>
+
+    <!-- todo image -->
+    <div>
+        <div class="carousel">
+        <div id="carouselExampleIndicators5" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Alpha Team Image 2.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>The 2019 Alpha CubeSat team.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+<!--
+    <div>
+        <img class="alone" src="images/Alpha Team Image 2.png" alt="a photo of team members holding lightsail components ">
+        <div class="caption">
+            <h5>The 2019 Alpha CubeSat team.</h5>
+        </div>
+    </div>
+-->
+
+  
+    <p class="alone">Our current Program Manager, Josh Umansky-Castro, joined the Alpha CubeSat team that summer 
+    to begin the tedious paperwork process of getting the launch approved. But he was destined for more than paperwork,
+     and we were all destined for something very big in the year 2020.
+    </p>
+
+
+    <h2 class="alone">2020-2021: The COVID Years</h2>
+    <p class="alone"> The world shut down, but Josh brought as much lab equipment he could to his house 
+    and started working as a one-man band. Over the course of five months, Josh went from being the paperwork
+     guy to being the design guy, the code guy, and the <em>everything</em> guy.</p>
+     <!-- make EVERYTHING bold -->
+
+<section>
+    <div class="carousel">
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/ProjectLead_HomeLabCovid 1 Cropped.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Josh Umansky-Castro, building a spacecraft from home!</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Andy Tan 2 Cropped.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Andy Tan with the EDU (Engineering Development Unit) - Prototype Alpha CubeSat!</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators1" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" type="button" data-target="#carouselExampleIndicators1" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+    <p class="alone">Despite the pandemic, progress on Alpha CubeSat plodded on, both from the confines 
+    of home and in the lab, donned with masks. Very soon, it was no longer just Josh—our team began to grow again, 
+    and we took on new subteam leads such as Andy Tan, Lauren Greenhill, Eleanor Glenn, and Gillis Lowry.</p>
+
+    <div class="carousel">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/small-cubesat.gif" alt="">
+                    <div class="carousel-caption">
+                        <h5>Status of CubeSat assembly in fall of 2021!</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Balloon 1 1 cropped 2 final.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Balloon launch in October 2021 to test our radio communications!</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators2" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" type="button" data-target="#carouselExampleIndicators2" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <p class="alone">During 2021, the Alpha CubeSat team redesigned the entire circuit, and made a complete and 
+    fully functional CubeSat EDU (Engineering Development Unit—a functional prototype, in this case largely 
+    thanks to Andy)! After that, we made half of the final version of the CubeSat, 
+    fixed the solar flight circuit, and completed multiple high-altitude balloon launch experiments.
+    </p>
+
+
+    <h2 class="alone">2022-2024: The Home Stretch</h2>
+
+    <p class="alone">In 2022, we finally completed the construction of our CubeSat! From there, 
+    we entered a period of intensive ChipSat and CubeSat testing with the help of 
+    Integration and Testing team lead Millie Schwartz.
+    </p>
+
+
+    <div class="carousel">
+        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Bill_Nye_Visit.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Bill Nye's visit in March 2022: Publicity Lead Gillis Lowry in the center, Prof. Mason Peck just left of center,
+                             and Josh Umansky-Castro on the far right.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Balloon_Launch_2022_Cropped.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Balloon Launch in 2022 to test our ChipSats!</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/TVC_Test.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>The CubeSat being tested inside a Thermal Vaccuum Chamber.</h5>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators3" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" type="button" data-target="#carouselExampleIndicators3" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+    <p class="alone">Our publicity team lead Gillis Lowry was hard at work presenting our holograms to Bill Nye and 
+        creating a museum exhibit featuring Alpha CubeSat. The exhibit opened on February 16th, 2023, at New York’s Intrepid Museum, 
+        adjacent to the famous Space Shuttle Enterprise. “Postcards From Earth: Holograms on an Interstellar Journey” inspired audiences 
+        to ponder whether we’re alone in the universe, and what the messages we might send to any aliens that be.
+    </p>
+
+    <p class="alone">Throughout the exhibit’s eight-month lifespan, over two thousand visitors voted on 
+        the final hologram to include onboard Alpha. The people have decided: a sleeping cat shall be our message 
+        to the universe, along with a female face, a male face, a moth, and a fish.
+    </p>
+
+
+    <div class="carousel">
+        <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Gillis_Exhibit.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Publicity Lead Gillis Lowry at the Intrepid Museum exhibit.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Team_At_Intrepid.png" alt="">
+                    <div class="carousel-caption">
+                        <h5>Alpha CubeSat team members examine the Intrepid Museum Exhibit!</h5>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators4" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" type="button" data-target="#carouselExampleIndicators4" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+    <p class="alone">In the 2023-24 school year, we’re putting the finishing touches on our software and 
+    hardware, and are rapidly approaching the finale of Alpha CubeSat.
+    </p>
+
+
+    <h2 class="alone">The Future</h2>
+
+    <p class="alone">Alpha CubeSat’s current earliest launch date is June 2024. As always, 
+    our launch date depends on upcoming spacecraft testing and software debugging.
+    </p>
+
+    <p class="alone">It’s a long journey from concept to CubeSat, especially for a spacecraft 
+    beholden to academic schedules. But being student-built means that hundreds of young people 
+    have had the opportunity to work on a real spacecraft!
+    </p>
+
+    <p class="alone">Regardless of what happens after launch, we couldn’t be more grateful 
+    for the experience we’ve shared.
+    </p>
+
+    <!-- image of the balloon with sail -->
+    <img class="footer" src="images/Swoop_Footer_History_3.PNG" alt="">
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <h2><span id="contact-empty-type"></span> Us</h2>
+
+            <script>
+                var typed = new Typed("#contact-empty-type", {
+                    strings: ['Reach out to', 'Write to', 'Connect with'],
+                    typeSpeed: 40,
+                    backSpeed: 20,
+                    loop: true
+                });
+            </script>
+
+            <div class="col-6 contact-content">
+                <p>cornellalphacubesat@gmail.com</p>
+                <p>124 Hoy Rd, 450 Upson Hall <br>
+                    Cornell University <br>
+                    Ithaca, NY 14853</p>
+                <!-- <a class="link-button" href="about.html">Learn More</a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+
+    <!-- Plugin JavaScript -->
+    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+
+    <!-- SCROLLING NAV JAVASCRIPT -->
+    <!-- <script src="js/scrolling-nav.js"></script> -->
+
+</body>
+
+</html>
