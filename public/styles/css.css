@@ -250,6 +250,32 @@ img {
   margin: 0 auto;
   margin-top: 5%;
 }
+ 
+/* Custom image with caption class */
+.img-with-caption {
+  width: 90%;
+  padding-left: 20%;
+  padding-right: 10%;
+  position: relative; /* Needed for caption positioning */
+  text-align: center;
+}
+
+.img-with-caption img {
+  width: 100%;
+  display: block; /* Remove any extra spacing around the image */
+}
+
+.img-caption {
+  background-color: #0a092682;
+  color: white; /* Text color for the caption */
+  position: absolute;
+  bottom: 0;
+  left: 20%; 
+  right: 10%; 
+  width: 90%; /* Make the caption width 100% to fit the whole bottom */
+  padding: 10px;
+  text-align: center;
+}
 
 img.alone {
   margin-left: auto;
@@ -292,13 +318,14 @@ h2.alone {
 /*CAROUSEL CLASSES*/
 .carousel {
   width: 90%;
-  margin: 0 auto 5% auto;
+  margin: 5% auto 5% auto;
 }
 
 .carousel-inner {}
 
 .carousel-item {
   padding: 0 10%;
+  max-height: 700px;
 }
 
 p.carousel {
@@ -318,6 +345,7 @@ p.carousel {
   padding-left: 4%;
   padding-right: 4%;
 }
+
 
 /* .carousel-control-prev {
   position: absolute;
@@ -598,7 +626,7 @@ p.carousel {
 
 .hologramContainer {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -610,7 +638,7 @@ p.carousel {
 .btns {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
