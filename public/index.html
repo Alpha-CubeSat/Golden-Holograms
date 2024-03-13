@@ -26,6 +26,7 @@
 
   <!-- <script src="./js/slider.js"></script> -->
   <script src="./js/scroll.js"></script>
+  <script src="./js/toggle.js"></script>
 
 
   <!-- BOOTSTRAP -->
@@ -88,9 +89,16 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="history.html">▸ <span class="navLetter">H</span>istory</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="team.html">▸ <span class="navLetter">T</span>eam</a>
-          </li>
+
+          <button class="nav-item dropbtn nav-link js-scroll-trigger" onclick="myFunction()">▸ <span
+              class="navLetter">T</span>eam</a>
+          </button>
+          <div class="dropdown-content" id="navDropdown">
+            <a href="team.html">Current Members</a>
+            <a href="team.html">Alumni</a>
+          </div>
+
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">▸ <span class="navLetter">C</span>ontact</a>
           </li>
