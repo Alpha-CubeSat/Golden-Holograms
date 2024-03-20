@@ -149,7 +149,8 @@ body {
 }
 
 .nav-link {
-  padding: 5px 20px !important;
+  /* original: padding: 5px 20px */
+  padding: 5px 15px !important;
 }
 
 
@@ -216,6 +217,46 @@ body {
   top: 27px;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255, 0.5);
+  text-transform: lowercase;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: inherit;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 35%;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* text-align: left; */
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 
 
@@ -250,29 +291,33 @@ img {
   margin: 0 auto;
   margin-top: 5%;
 }
- 
+
 /* Custom image with caption class */
 .img-with-caption {
   width: 90%;
   padding-left: 20%;
   padding-right: 10%;
-  position: relative; /* Needed for caption positioning */
+  position: relative;
+  /* Needed for caption positioning */
   text-align: center;
 }
 
 .img-with-caption img {
   width: 100%;
-  display: block; /* Remove any extra spacing around the image */
+  display: block;
+  /* Remove any extra spacing around the image */
 }
 
 .img-caption {
   background-color: #0a092682;
-  color: white; /* Text color for the caption */
+  color: white;
+  /* Text color for the caption */
   position: absolute;
   bottom: 0;
-  left: 20%; 
-  right: 10%; 
-  width: 90%; /* Make the caption width 100% to fit the whole bottom */
+  left: 20%;
+  right: 10%;
+  width: 90%;
+  /* Make the caption width 100% to fit the whole bottom */
   padding: 10px;
   text-align: center;
 }
@@ -631,12 +676,12 @@ p.carousel {
   column-gap: 0%;
 }
 
-#unityContainer{
+#unityContainer {
   max-width: 900px;
   /* background-color: #E87524; */
 }
 
-#hologram-btns div{
+#hologram-btns div {
   display: flex;
   max-width: 150px;
   justify-content: left;
@@ -818,6 +863,77 @@ p.carousel {
   font-size: 54pt;
 }
 
+/* TEAM */
+.team {}
+
+.team-title {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25vh 0px 20vh 0px;
+}
+
+.team-title h1 {
+  font-size: 54pt;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.team h3 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.team img {
+  display: block;
+  max-height: 15rem;
+  width: 11rem;
+  object-fit: cover;
+  height: auto;
+}
+
+.team-images {
+  content: "";
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-image-col {
+  float: left;
+  padding: 1.25rem;
+}
+
+.team p {
+  margin: 2%
+}
 
 /* CONTACT */
 
