@@ -913,20 +913,26 @@ p.carousel {
 
 .team img {
   display: block;
-  max-height: 300px;
-  width: auto;
+  max-height: 15rem;
+  width: 11rem;
+  object-fit: cover;
   height: auto;
 }
 
 .team-images {
   content: "";
   clear: both;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .team-image-col {
   float: left;
-  padding: 8px;
+  padding: 1.25rem;
+}
+
+.team p {
+  margin: 2%
 }
 
 /* CONTACT */
