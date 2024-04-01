@@ -1026,6 +1026,14 @@ p.carousel {
   transition: 0.3s;
 }
 
+.contact-content img {
+  -webkit-filter: brightness(0) invert(100%);
+  /* Safari/Chrome */
+  filter: brightness(0) invert(100%);
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
 
 
 /* ALL ANIMATION CODE BELOW */
