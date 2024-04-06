@@ -913,10 +913,9 @@ p.carousel {
 
 .team img {
   display: block;
-  max-height: 15rem;
+  height: 15rem;
   width: 11rem;
   object-fit: cover;
-  height: auto;
 }
 
 .team-images {
