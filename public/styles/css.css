@@ -872,7 +872,7 @@ p.carousel {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25vh 0px 20vh 0px;
+  margin: 25vh 0px 15vh 0px;
 }
 
 .team-title h1 {
@@ -909,6 +909,8 @@ p.carousel {
 .team h3 {
   margin-top: 40px;
   font-size: 20px;
+  justify-items: center;
+  text-align: center;
 }
 
 .team img {
@@ -923,16 +925,20 @@ p.carousel {
   clear: both;
   display: flex;
   flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-image-col {
-  float: left;
+  float: center;
   padding: 1.25rem;
 }
 
 .team p {
   margin: 2%
 }
+
 
 /* CONTACT */
 
