@@ -918,6 +918,7 @@ p.carousel {
   height: 15rem;
   width: 11rem;
   object-fit: cover;
+  vertical-align: middle;
 }
 
 .team-images {
