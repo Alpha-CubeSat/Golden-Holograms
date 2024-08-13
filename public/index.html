@@ -200,6 +200,55 @@
     nearest stellar neighbor, Alpha Centauri.
   </p>
 
+<!-- Message Board Section -->
+
+<section id="message-board">
+  <h2>What message will you send to the stars?</h2>
+  <form id="message-form">
+    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+  
+  // Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
+    authDomain: "alpha-messageboard.firebaseapp.com",
+    projectId: "alpha-messageboard",
+    storageBucket: "alpha-messageboard.appspot.com",
+    messagingSenderId: "372497949428",
+    appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
+  };
+
+  const app = initializeApp(firebaseConfig);
+
+  const db = getFirestore(app);
+
+  document.getElementById('message-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const message = document.getElementById('message').value;
+
+    try {
+      await addDoc(collection(db, 'messages'), {
+        content: message,
+        timestamp: serverTimestamp()
+      });
+      alert('Message sent!');
+      document.getElementById('message').value = '';
+    } catch (error) {
+      console.error('Error writing message: ', error);
+    }
+  });
+</script>
+
+
+
+
 
   <!-- CONTACT -->
   <section class="half-page" id="contact">
