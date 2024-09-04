@@ -918,7 +918,7 @@ p.carousel {
   height: 15rem;
   width: 11rem;
   object-fit: cover;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .team-images {
@@ -928,7 +928,7 @@ p.carousel {
   flex-wrap: wrap;
   justify-items: center;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .team-image-col {
