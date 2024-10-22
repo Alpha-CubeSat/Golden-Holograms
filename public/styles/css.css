@@ -21,6 +21,10 @@
   src: url(ShareTech.ttf);
 }
 
+@font-face {
+  font-family: Sonnambula;
+  src: url(la-sonnambula.ttf);
+}
 
 /* FONT CUSTOMIZATION */
 em {
@@ -52,6 +56,17 @@ h4 {
 h5.mobile {
   display: none;
 }
+
+h6{
+  font-family: Sonnambula;
+  font-size: 50px; 
+  color: #efeef7; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  vertical-align: top; 
+  text-align: center; /* Center the text within the header */
+  margin: 20px 0; /* Add space above and below */
+}
+
 
 .margin-top-20 {
   padding-top: 10px;
@@ -1080,8 +1095,119 @@ p.carousel {
   background-color: rgba(66, 214, 202, 0.7);
 }
 
+.postcards-title {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30vh 0px 45vh 0px;
+}
 
+.postcard-container {
+  display: flex;
+  flex-wrap: wrap;
 
+  background-image: url("../images/postcards/messages-bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+  
+
+.postcard {
+  
+
+  border: 2px solid #ccc;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url('../images/postcards/postcard1.png');
+  background-size: cover;
+  position: absolute;
+
+  transform: rotate(calc(-5deg + 10deg * random()));
+}
+
+.postcard-content {
+  position: relative;
+  text-align: center;
+  display: flex;
+
+  color: #0a0a0a !important; 
+  font-size: 15px !important;
+
+}
+.postcard:nth-child(1) {
+  top: 25%;
+  left: 80%;
+  transform: rotate(18deg);
+  width: 200px;
+  height: 150px;
+
+}
+
+.postcard:nth-child(2) {
+  top: 15%;
+  right: 70%;
+  transform: rotate(-10deg);
+  width: 280px;
+  height: 210px;
+}
+
+.postcard:nth-child(3) {
+  top: 70%;
+  left: 50%;
+  transform: rotate(-8deg);
+  width: 280px;
+  height: 210px;
+}
+
+.postcard:nth-child(4) {
+  
+  top: 15%;
+  right: 55%;
+  transform: rotate(-15deg);
+  width: 200px;
+  height: 150px;
+}
+
+.postcard:nth-child(5) {
+  top: 15%;
+  left: 60%;
+  transform: rotate(-3deg);
+  width: 200px;
+  height: 150;
+
+}
+
+.postcard:nth-child(6) {
+  top: 70%;
+  right: 75%;
+  transform: rotate(12deg);
+  width: 240px;
+  height: 180px;
+}
+
+.postcard:nth-child(7) {
+  top: 55%;
+  right: 55%;
+  transform: rotate(0deg);
+  width: 240px;
+  height: 180px;
+}
+
+.postcard:nth-child(8) {
+  top: 60%;
+  right: 10%;
+  transform: rotate(15deg);
+  width: 200px;
+  height: 150px;
+}
 /* ALL ANIMATION CODE BELOW */
 
 /* STARY NIGHT BACKGROUND */
