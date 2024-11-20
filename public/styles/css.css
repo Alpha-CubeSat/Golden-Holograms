@@ -26,6 +26,28 @@
   src: url(la-sonnambula.ttf);
 }
 
+@font-face {
+  font-family: Skating;
+  src: url(Skating.otf);
+}
+
+@font-face {
+  font-family: Breathing;
+  src: url(Breathing.ttf);
+}
+@font-face {
+  font-family: YellowSun;
+  src: url(DK_Lemon_Yellow_Sun.otf);
+}
+@font-face {
+  font-family: Play;
+  src: url(Play-Regular.ttf);
+}
+@font-face {
+  font-family: Play;
+  src: url(Play-Bold.ttf);
+  font-weight: bold;
+}
 /* FONT CUSTOMIZATION */
 em {
   color: #E87524;
@@ -58,15 +80,29 @@ h5.mobile {
 }
 
 h6{
-  font-family: Sonnambula;
+  /* font-family: Skating; */
+  /* font-family: YellowSun; */
+  /* font-family: Breathing; */
+  font-family: Play;
+  font-weight: bold;
   font-size: 50px; 
   color: #efeef7; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   vertical-align: top; 
-  text-align: center; /* Center the text within the header */
-  margin: 20px 0; /* Add space above and below */
+  text-align: center; 
+  margin: 30px 0px 0px 0px; 
 }
 
+
+h7 {
+  /* font-family: Sonnambula; */
+  font-size: 25px; 
+  color: #efeef7; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center; 
+  margin: 5px 0 20px; /* Smaller top margin to stick closer to h6 */
+  display: block; /* Ensure h7 behaves like a block-level element */
+}
 
 .margin-top-20 {
   padding-top: 10px;
@@ -1095,19 +1131,36 @@ p.carousel {
   background-color: rgba(66, 214, 202, 0.7);
 }
 
-.postcards-title {
+/* .postcards-title {
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 30vh 0px 45vh 0px;
+} */
+.postcards-title {
+  height: 15vh;
+  /* width: 70vh; */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  margin: vh 0 2vh 0;
 }
+
+/* .postcards-subtitle {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30vh 100px 45vh 100px;
+} */
 
 .postcard-container {
   display: flex;
   flex-wrap: wrap;
 
-  background-image: url("../images/postcards/messages-bg.jpg");
+  background-image: url("../images/postcards/new_background.png");
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -1194,7 +1247,7 @@ p.carousel {
 }
 
 .postcard:nth-child(7) {
-  top: 55%;
+  top: 65%;
   right: 55%;
   transform: rotate(0deg);
   width: 240px;
