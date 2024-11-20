@@ -864,7 +864,10 @@ p.carousel {
 }
 
 /* TEAM */
-.team {}
+.team {
+  text-align: center;
+  padding: 13%;
+}
 
 .team-title {
   height: 20vh;
