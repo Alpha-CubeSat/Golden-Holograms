@@ -108,6 +108,10 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">▸ <span class="navLetter">C</span>ontact</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="postcards.html">▸ <span class="navLetter">P</span>ostcards</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -202,6 +206,107 @@
     light sail—and become the trailblazer for future missions to our
     nearest stellar neighbor, Alpha Centauri.
   </p>
+
+<!-- Message Board Section -->
+<!-- 
+<section id="message-board">
+  <h2>What message would you send to the stars?</h2>
+  <form id="message-form">
+    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+  
+  // Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
+    authDomain: "alpha-messageboard.firebaseapp.com",
+    projectId: "alpha-messageboard",
+    storageBucket: "alpha-messageboard.appspot.com",
+    messagingSenderId: "372497949428",
+    appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
+  };
+
+  const app = initializeApp(firebaseConfig);
+
+  const db = getFirestore(app);
+
+  document.getElementById('message-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const message = document.getElementById('message').value;
+
+    try {
+      await addDoc(collection(db, 'messages'), {
+        content: message,
+        timestamp: serverTimestamp(),
+        approved: false
+      });
+      alert('Message sent!');
+      document.getElementById('message').value = '';
+    } catch (error) {
+      console.error('Error writing message: ', error);
+    }
+  });
+</script>
+ -->
+
+ <section id="message-board">
+  <h2>What message would you send to the stars?</h2>
+  <form id="message-form">
+    <input type="text" id="first-name" placeholder="Your first name" required>
+    <input type="text" id="location" placeholder="Where you're from" required>
+    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+  
+  // Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
+    authDomain: "alpha-messageboard.firebaseapp.com",
+    projectId: "alpha-messageboard",
+    storageBucket: "alpha-messageboard.appspot.com",
+    messagingSenderId: "372497949428",
+    appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  document.getElementById('message-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const firstName = document.getElementById('first-name').value;
+    const location = document.getElementById('location').value;
+    const message = document.getElementById('message').value;
+
+    try {
+      await addDoc(collection(db, 'messages'), {
+        firstName: firstName,
+        location: location,
+        content: message,
+        timestamp: serverTimestamp(),
+        approved: false,
+        favorite: false
+      });
+      alert('Message sent!');
+      document.getElementById('first-name').value = '';
+      document.getElementById('location').value = '';
+      document.getElementById('message').value = '';
+    } catch (error) {
+      console.error('Error writing message: ', error);
+    }
+  });
+</script>
 
 
   <!-- CONTACT -->
