@@ -100,7 +100,7 @@ h7 {
   color: #efeef7; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   text-align: center; 
-  margin: 5px 0 20px; /* Smaller top margin to stick closer to h6 */
+  margin: 5px 0 5px; /* Smaller top margin to stick closer to h6 */
   display: block; /* Ensure h7 behaves like a block-level element */
 }
 
@@ -396,6 +396,7 @@ img.footer {
   padding-left: 20%;
   padding-right: 20%;
   margin-top: 5%;
+  margin-bottom: 15%;
   text-align: center;
 }
 
@@ -1101,7 +1102,7 @@ p.carousel {
 /* MESSAGE BOARD */
 
 #message-board {
-  margin: 20px;
+  margin: 30px;
   text-align: center;
 }
 
@@ -1109,6 +1110,7 @@ p.carousel {
   display: inline-block;
   width: 80%;
   max-width: 600px;
+  margin: 30px;
 }
 
 #message {
@@ -1116,7 +1118,7 @@ p.carousel {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -1124,7 +1126,7 @@ p.carousel {
   padding: 10px 20px;
   background-color: #42D6CA;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -1441,6 +1443,7 @@ p.carousel {
 
   .alone {
     padding: 0% 5%;
+    margin-bottom: 50px;
     text-align: center;
   }
 
