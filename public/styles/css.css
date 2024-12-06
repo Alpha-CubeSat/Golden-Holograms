@@ -35,19 +35,23 @@
   font-family: Breathing;
   src: url(Breathing.ttf);
 }
+
 @font-face {
   font-family: YellowSun;
   src: url(DK_Lemon_Yellow_Sun.otf);
 }
+
 @font-face {
   font-family: Play;
   src: url(Play-Regular.ttf);
 }
+
 @font-face {
   font-family: Play;
   src: url(Play-Bold.ttf);
   font-weight: bold;
 }
+
 /* FONT CUSTOMIZATION */
 em {
   color: #E87524;
@@ -79,29 +83,31 @@ h5.mobile {
   display: none;
 }
 
-h6{
+h6 {
   /* font-family: Skating; */
   /* font-family: YellowSun; */
   /* font-family: Breathing; */
   font-family: Play;
   font-weight: bold;
-  font-size: 50px; 
-  color: #efeef7; 
+  font-size: 50px;
+  color: #efeef7;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  vertical-align: top; 
-  text-align: center; 
-  margin: 30px 0px 0px 0px; 
+  vertical-align: top;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
 }
 
 
 h7 {
   /* font-family: Sonnambula; */
-  font-size: 25px; 
-  color: #efeef7; 
+  font-size: 25px;
+  color: #efeef7;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  text-align: center; 
-  margin: 5px 0 5px; /* Smaller top margin to stick closer to h6 */
-  display: block; /* Ensure h7 behaves like a block-level element */
+  text-align: center;
+  margin: 5px 0 5px;
+  /* Smaller top margin to stick closer to h6 */
+  display: block;
+  /* Ensure h7 behaves like a block-level element */
 }
 
 .margin-top-20 {
@@ -546,6 +552,10 @@ p.carousel {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar .container {
+  max-width: 90%;
 }
 
 .about .container {
@@ -1148,9 +1158,12 @@ p.carousel {
   height: 15vh;
   /* width: 70vh; */
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
+  flex-direction: column;
+  /* Stack children vertically */
+  align-items: center;
+  /* Center content horizontally */
+  justify-content: center;
+  /* Center content vertically */
   margin: vh 0 2vh 0;
 }
 
@@ -1175,12 +1188,12 @@ p.carousel {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
 }
-  
+
 
 .postcard {
-  
+
 
   border: 2px solid #ccc;
   padding: 20px;
@@ -1197,10 +1210,11 @@ p.carousel {
   text-align: center;
   display: flex;
 
-  color: #0a0a0a !important; 
+  color: #0a0a0a !important;
   font-size: 15px !important;
 
 }
+
 .postcard:nth-child(1) {
   top: 25%;
   left: 80%;
@@ -1227,7 +1241,7 @@ p.carousel {
 }
 
 .postcard:nth-child(4) {
-  
+
   top: 15%;
   right: 55%;
   transform: rotate(-15deg);
@@ -1267,6 +1281,7 @@ p.carousel {
   width: 200px;
   height: 150px;
 }
+
 /* ALL ANIMATION CODE BELOW */
 
 /* STARY NIGHT BACKGROUND */
