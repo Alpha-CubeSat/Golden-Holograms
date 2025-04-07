@@ -1281,6 +1281,34 @@ p.carousel {
   height: 150px;
 }
 
+
+/* INSTAGRAM EMBEDDING */
+
+.instagram-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+        max-width: 800px; 
+        padding: 20px;
+        background: #040627;
+        border-radius: 40px; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+.instagram-wrapper {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 20px; /* Rounder edges for the post itself, not box surrounding it */
+  overflow: hidden; /* Ensures the embed doesn't exceed the border */
+}
+
+.instagram-media {
+    width: 100% !important;
+    max-width: 750px; 
+    border-radius: 20px; 
+}
+
 /* ALL ANIMATION CODE BELOW */
 
 /* STARY NIGHT BACKGROUND */
