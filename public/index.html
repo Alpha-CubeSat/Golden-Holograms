@@ -93,17 +93,9 @@
             <a class="nav-link js-scroll-trigger" href="history.html">▸ <span class="navLetter">H</span>istory</a>
           </li>
 
-          <!-- <button class="nav-item dropbtn nav-link js-scroll-trigger" onclick="myFunction()">▸ <span
-              class="navLetter">T</span>eam</a>
-          </button>
-          <div class="dropdown-content" id="navDropdown">
-            <a href="team.html">Current Members</a>
-            <a href="team.html">Alumni</a>
-          </div> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="team.html">▸ <span class="navLetter">T</span>eam</a>
           </li>
-
 
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">▸ <span class="navLetter">C</span>ontact</a>
@@ -111,10 +103,9 @@
 
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="postcards.html">▸ <span class="navLetter">P</span>ostcards</a>
-            </li>
-          <li class="nav-item"></li>
-            <a class="nav-link js-scroll-trigger" href="dashboard.html">▸ <span
-                    class="navLetter">D</span>ashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="dashboard.html">▸ <span class="navLetter">D</span>ashboard</a>
           </li>
         </ul>
       </div>
@@ -211,8 +202,8 @@
     nearest stellar neighbor, Alpha Centauri.
   </p>
 
-<!-- Message Board Section -->
-<!-- 
+  <!-- Message Board Section -->
+  <!-- 
 <section id="message-board">
   <h2>What message would you send to the stars?</h2>
   <form id="message-form">
@@ -259,79 +250,79 @@
 </script>
  -->
 
- <section id="message-board">
-  <h2>What message would you send to the stars?</h2>
-  <h7>Check out the postcards page to see messages!</h7>
-  <form id="message-form">
-    <input type="text" id="first-name" placeholder="Your first name" maxlength="15" required>
-    <small id="first-name-count" style="color: white;">0 / 15</small>
+  <section id="message-board">
+    <h2>What message would you send to the stars?</h2>
+    <h7>Check out the postcards page to see messages!</h7>
+    <form id="message-form">
+      <input type="text" id="first-name" placeholder="Your first name" maxlength="15" required>
+      <small id="first-name-count" style="color: white;">0 / 15</small>
 
-    <input type="text" id="location" placeholder="Where you're from" maxlength="20" required>
-    <small id="location-count" style="color: white;">0 / 20</small>
+      <input type="text" id="location" placeholder="Where you're from" maxlength="20" required>
+      <small id="location-count" style="color: white;">0 / 20</small>
 
-    <textarea id="message" rows="5" placeholder="Write your message here..." maxlength="200" required></textarea>
-    <small id="message-count" style="color: white;">0 / 200</small>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+      <textarea id="message" rows="5" placeholder="Write your message here..." maxlength="200" required></textarea>
+      <small id="message-count" style="color: white;">0 / 200</small>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-  
-  // Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
-    authDomain: "alpha-messageboard.firebaseapp.com",
-    projectId: "alpha-messageboard",
-    storageBucket: "alpha-messageboard.appspot.com",
-    messagingSenderId: "372497949428",
-    appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
-  };
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
+      authDomain: "alpha-messageboard.firebaseapp.com",
+      projectId: "alpha-messageboard",
+      storageBucket: "alpha-messageboard.appspot.com",
+      messagingSenderId: "372497949428",
+      appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
+    };
 
-  document.getElementById('message-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const firstName = document.getElementById('first-name').value;
-    const location = document.getElementById('location').value;
-    const message = document.getElementById('message').value;
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
 
-    try {
-      await addDoc(collection(db, 'messages'), {
-        firstName: firstName,
-        location: location,
-        content: message,
-        timestamp: serverTimestamp(),
-        approved: false,
-        favorite: false
+    document.getElementById('message-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const location = document.getElementById('location').value;
+      const message = document.getElementById('message').value;
+
+      try {
+        await addDoc(collection(db, 'messages'), {
+          firstName: firstName,
+          location: location,
+          content: message,
+          timestamp: serverTimestamp(),
+          approved: false,
+          favorite: false
+        });
+        alert('Message sent for approval!');
+        document.getElementById('first-name').value = '';
+        document.getElementById('location').value = '';
+        document.getElementById('message').value = '';
+      } catch (error) {
+        console.error('Error writing message: ', error);
+      }
+    });
+    //--------------
+
+    function updateCharCount(id, countId, max) {
+      const input = document.getElementById(id);
+      const counter = document.getElementById(countId);
+
+      input.addEventListener('input', () => {
+        counter.textContent = `${input.value.length} / ${max}`;
       });
-      alert('Message sent for approval!');
-      document.getElementById('first-name').value = '';
-      document.getElementById('location').value = '';
-      document.getElementById('message').value = '';
-    } catch (error) {
-      console.error('Error writing message: ', error);
     }
-  });
-  //--------------
 
-  function updateCharCount(id, countId, max) {
-  const input = document.getElementById(id);
-  const counter = document.getElementById(countId);
-
-  input.addEventListener('input', () => {
-    counter.textContent = `${input.value.length} / ${max}`;
-  });
-}
-
-  // Set up listeners for each field
-  updateCharCount('first-name', 'first-name-count', 15);
-  updateCharCount('location', 'location-count', 20);
-  updateCharCount('message', 'message-count', 200);
-</script>
+    // Set up listeners for each field
+    updateCharCount('first-name', 'first-name-count', 15);
+    updateCharCount('location', 'location-count', 20);
+    updateCharCount('message', 'message-count', 200);
+  </script>
 
 
   <!-- CONTACT -->
