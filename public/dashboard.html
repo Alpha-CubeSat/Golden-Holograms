@@ -107,48 +107,48 @@
   </nav>
 
   <!-- DASHBOARD CONTENT -->
-  <section class="half-page" id="dashboard">
+  <section class="full-page about" id="dashboard" style="padding-top: 120px;">
     <div class="container">
-      <h2>Live Mission Dashboard</h2>
-      <div class="col-6 dashboard-content">
+      <div class="content margin-top">
+        <h2>Live Mission Dashboard</h2>
         <p>Our live mission dashboard is currently under development. Please check back soon for updates!</p>
-        <a class="link-button" href="index.html">Return Home</a>
+        <a class="link-button" href="/">Return Home</a>
       </div>
     </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section class="half-page" id="contact">
+    <div class="container">
+      <h2><span id="contact-empty-type"></span> Us</h2>
 
-    <!-- CONTACT -->
-    <section class="half-page" id="contact">
-      <div class="container">
-        <h2><span id="contact-empty-type"></span> Us</h2>
+      <script>
+        var typed = new Typed("#contact-empty-type", {
+          strings: ['Reach out to', 'Write to', 'Connect with'],
+          typeSpeed: 40,
+          backSpeed: 20,
+          loop: true
+        });
+      </script>
 
-        <script>
-          var typed = new Typed("#contact-empty-type", {
-            strings: ['Reach out to', 'Write to', 'Connect with'],
-            typeSpeed: 40,
-            backSpeed: 20,
-            loop: true
-          });
-        </script>
+      <div class="col-6 contact-content">
+        <p>cornellalphacubesat@gmail.com</p>
+        <p>124 Hoy Rd, 450 Upson Hall <br>
+          Cornell University <br>
+          Ithaca, NY 14853</p>
+        <!-- <a class="link-button" href="about.html">Learn More</a> -->
 
-        <div class="col-6 contact-content">
-          <p>cornellalphacubesat@gmail.com</p>
-          <p>124 Hoy Rd, 450 Upson Hall <br>
-            Cornell University <br>
-            Ithaca, NY 14853</p>
-          <!-- <a class="link-button" href="about.html">Learn More</a> -->
+        <a href="https://www.instagram.com/ssds.alphacubesat/" target="_blank"><img src="/images/icons/Instagram.png"
+            alt="Instagram"></img></a>
+        <a href="https://www.linkedin.com/company/cornell-alpha-cubesat-mission/" target="_blank"><img
+            src="images/icons/Linkedin.png" alt="LinkedIn"></img></a>
+        <a href="https://github.com/Alpha-CubeSat" target="_blank"><img src="images/icons/Github.png"
+            alt="Github"></img></a>
 
-          <a href="https://www.instagram.com/ssds.alphacubesat/" target="_blank"><img src="/images/icons/Instagram.png"
-              alt="Instagram"></img></a>
-          <a href="https://www.linkedin.com/company/cornell-alpha-cubesat-mission/" target="_blank"><img
-              src="images/icons/Linkedin.png" alt="LinkedIn"></img></a>
-          <a href="https://github.com/Alpha-CubeSat" target="_blank"><img src="images/icons/Github.png"
-              alt="Github"></img></a>
-
-          <p style="font-size: 14px; margin-top: 2rem;">Website hosted by Benjamin Lowry</p>
-        </div>
+        <p style="font-size: 14px; margin-top: 2rem;">Website hosted by Benjamin Lowry</p>
       </div>
-    </section>
+    </div>
+  </section>
 
 </body>
 
