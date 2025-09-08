@@ -249,21 +249,12 @@
 </script>
  -->
 
- <section id="message-board">
-  <h2>What message would you send to the stars?</h2>
-  <h7>Check out the postcards page to see messages!</h7>
-  <form id="message-form">
-    <input type="text" id="first-name" placeholder="Your first name" maxlength="15" required>
-    <small id="first-name-count" style="color: white;">0 / 15</small>
-
-    <input type="text" id="location" placeholder="Where you're from" maxlength="20" required>
-    <small id="location-count" style="color: white;">0 / 20</small>
-
-    <textarea id="message" rows="5" placeholder="Write your message here..." maxlength="200" required></textarea>
-    <small id="message-count" style="color: white;">0 / 200</small>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <section id="message-board">
+    <h2>What message would you send to the stars?</h2>
+    <h7>Check out the postcards page to see messages!</h7>
+    <form id="message-form">
+      <input type="text" id="first-name" placeholder="Your first name" maxlength="15" required>
+      <small id="first-name-count" style="color: white;">0 / 15</small>
 
       <input type="text" id="location" placeholder="Where you're from" maxlength="20" required>
       <small id="location-count" style="color: white;">0 / 20</small>
@@ -325,23 +316,23 @@
         counter.textContent = `${input.value.length} / ${max}`;
       });
     }
-  });
-  //--------------
 
-  function updateCharCount(id, countId, max) {
-  const input = document.getElementById(id);
-  const counter = document.getElementById(countId);
+    //--------------
 
-  input.addEventListener('input', () => {
-    counter.textContent = `${input.value.length} / ${max}`;
-  });
-}
+    function updateCharCount(id, countId, max) {
+      const input = document.getElementById(id);
+      const counter = document.getElementById(countId);
 
-  // Set up listeners for each field
-  updateCharCount('first-name', 'first-name-count', 15);
-  updateCharCount('location', 'location-count', 20);
-  updateCharCount('message', 'message-count', 200);
-</script>
+      input.addEventListener('input', () => {
+        counter.textContent = `${input.value.length} / ${max}`;
+      });
+    }
+
+    // Set up listeners for each field
+    updateCharCount('first-name', 'first-name-count', 15);
+    updateCharCount('location', 'location-count', 20);
+    updateCharCount('message', 'message-count', 200);
+  </script>
 
   <!-- CONTACT -->
   <section class="half-page" id="contact">
