@@ -111,7 +111,7 @@
 
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="postcards.html">▸ <span class="navLetter">P</span>ostcards</a>
-            </li>
+          </li>
         </ul>
       </div>
     </div>
@@ -164,6 +164,30 @@
   <section class="full-page about">
     <div class="home-title">
       <h1>Alpha CubeSat</h1>
+      <div class="countdown-container">
+        <div class="countdown-label">Launch Countdown</div>
+        <div class="countdown-timer" id="countdown">
+          <div class="time-unit">
+            <div class="time-number" id="days">00</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="time-unit">
+            <div class="time-number" id="hours">00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="time-unit">
+            <div class="time-number" id="minutes">00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="time-unit">
+            <div class="time-number" id="seconds">00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container">
 
@@ -202,13 +226,13 @@
   </section>
 
   <p class="alone">
-    Alpha will carry the world’s first retroreflective, solo-flying
+    Alpha will carry the world's first retroreflective, solo-flying
     light sail—and become the trailblazer for future missions to our
     nearest stellar neighbor, Alpha Centauri.
   </p>
 
-<!-- Message Board Section -->
-<!-- 
+  <!-- Message Board Section -->
+  <!-- 
 <section id="message-board">
   <h2>What message would you send to the stars?</h2>
   <form id="message-form">
@@ -255,79 +279,79 @@
 </script>
  -->
 
- <section id="message-board">
-  <h2>What message would you send to the stars?</h2>
-  <h7>Check out the postcards page to see messages!</h7>
-  <form id="message-form">
-    <input type="text" id="first-name" placeholder="Your first name" maxlength="15" required>
-    <small id="first-name-count" style="color: white;">0 / 15</small>
+  <section id="message-board">
+    <h2>What message would you send to the stars?</h2>
+    <h7>Check out the postcards page to see messages!</h7>
+    <form id="message-form">
+      <input type="text" id="first-name" placeholder="Your first name" maxlength="15" required>
+      <small id="first-name-count" style="color: white;">0 / 15</small>
 
-    <input type="text" id="location" placeholder="Where you're from" maxlength="20" required>
-    <small id="location-count" style="color: white;">0 / 20</small>
+      <input type="text" id="location" placeholder="Where you're from" maxlength="20" required>
+      <small id="location-count" style="color: white;">0 / 20</small>
 
-    <textarea id="message" rows="5" placeholder="Write your message here..." maxlength="200" required></textarea>
-    <small id="message-count" style="color: white;">0 / 200</small>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+      <textarea id="message" rows="5" placeholder="Write your message here..." maxlength="200" required></textarea>
+      <small id="message-count" style="color: white;">0 / 200</small>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-  
-  // Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
-    authDomain: "alpha-messageboard.firebaseapp.com",
-    projectId: "alpha-messageboard",
-    storageBucket: "alpha-messageboard.appspot.com",
-    messagingSenderId: "372497949428",
-    appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
-  };
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
+      authDomain: "alpha-messageboard.firebaseapp.com",
+      projectId: "alpha-messageboard",
+      storageBucket: "alpha-messageboard.appspot.com",
+      messagingSenderId: "372497949428",
+      appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
+    };
 
-  document.getElementById('message-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const firstName = document.getElementById('first-name').value;
-    const location = document.getElementById('location').value;
-    const message = document.getElementById('message').value;
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
 
-    try {
-      await addDoc(collection(db, 'messages'), {
-        firstName: firstName,
-        location: location,
-        content: message,
-        timestamp: serverTimestamp(),
-        approved: false,
-        favorite: false
+    document.getElementById('message-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const location = document.getElementById('location').value;
+      const message = document.getElementById('message').value;
+
+      try {
+        await addDoc(collection(db, 'messages'), {
+          firstName: firstName,
+          location: location,
+          content: message,
+          timestamp: serverTimestamp(),
+          approved: false,
+          favorite: false
+        });
+        alert('Message sent for approval!');
+        document.getElementById('first-name').value = '';
+        document.getElementById('location').value = '';
+        document.getElementById('message').value = '';
+      } catch (error) {
+        console.error('Error writing message: ', error);
+      }
+    });
+    //--------------
+
+    function updateCharCount(id, countId, max) {
+      const input = document.getElementById(id);
+      const counter = document.getElementById(countId);
+
+      input.addEventListener('input', () => {
+        counter.textContent = `${input.value.length} / ${max}`;
       });
-      alert('Message sent for approval!');
-      document.getElementById('first-name').value = '';
-      document.getElementById('location').value = '';
-      document.getElementById('message').value = '';
-    } catch (error) {
-      console.error('Error writing message: ', error);
     }
-  });
-  //--------------
 
-  function updateCharCount(id, countId, max) {
-  const input = document.getElementById(id);
-  const counter = document.getElementById(countId);
-
-  input.addEventListener('input', () => {
-    counter.textContent = `${input.value.length} / ${max}`;
-  });
-}
-
-  // Set up listeners for each field
-  updateCharCount('first-name', 'first-name-count', 15);
-  updateCharCount('location', 'location-count', 20);
-  updateCharCount('message', 'message-count', 200);
-</script>
+    // Set up listeners for each field
+    updateCharCount('first-name', 'first-name-count', 15);
+    updateCharCount('location', 'location-count', 20);
+    updateCharCount('message', 'message-count', 200);
+  </script>
 
 
   <!-- CONTACT -->
@@ -362,6 +386,40 @@
       </div>
     </div>
   </section>
+
+  <!-- Countdown JavaScript -->
+  <script>
+    function updateCountdown() {
+      // Target date: September 14, 2025, 6:02 PM Eastern Time
+      const targetDate = new Date('2025-09-14T18:02:00-04:00').getTime();
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+      } else {
+        // Countdown finished
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+
+        document.querySelector('.countdown-label').textContent = 'LAUNCHED!';
+      }
+    }
+
+    // Update countdown immediately and then every second
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 
 
   <!-- Bootstrap core JavaScript -->
