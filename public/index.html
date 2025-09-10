@@ -160,6 +160,35 @@
   <section class="full-page about">
     <div class="home-title">
       <h1>Alpha CubeSat</h1>
+      <div class="countdown-container">
+        <div class="countdown-label">Launch Countdown</div>
+        <div class="countdown-timer" id="countdown">
+          <div class="time-unit">
+            <div class="time-number" id="days">00</div>
+            <div class="time-label">Days</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="time-unit">
+            <div class="time-number" id="hours">00</div>
+            <div class="time-label">Hours</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="time-unit">
+            <div class="time-number" id="minutes">00</div>
+            <div class="time-label">Minutes</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="time-unit">
+            <div class="time-number" id="seconds">00</div>
+            <div class="time-label">Seconds</div>
+          </div>
+        </div>
+        <div class="livestream-link">
+          <a href="https://x.com/i/broadcasts/1rmxPvWagwDGN" target="_blank" rel="noopener noreferrer">
+            Watch Live Launch Stream
+          </a>
+        </div>
+      </div>
     </div>
     <div class="container">
 
@@ -198,7 +227,7 @@
   </section>
 
   <p class="alone">
-    Alpha will carry the world’s first retroreflective, solo-flying
+    Alpha will carry the world's first retroreflective, solo-flying
     light sail—and become the trailblazer for future missions to our
     nearest stellar neighbor, Alpha Centauri.
   </p>
@@ -319,16 +348,13 @@
       });
     }
 
-    //--------------
 
-    function updateCharCount(id, countId, max) {
-      const input = document.getElementById(id);
-      const counter = document.getElementById(countId);
+    // Set up listeners for each field
+    updateCharCount('first-name', 'first-name-count', 15);
+    updateCharCount('location', 'location-count', 20);
+    updateCharCount('message', 'message-count', 200);
+  </script>
 
-      input.addEventListener('input', () => {
-        counter.textContent = `${input.value.length} / ${max}`;
-      });
-    }
 
     // Set up listeners for each field
     updateCharCount('first-name', 'first-name-count', 15);
@@ -368,6 +394,40 @@
       </div>
     </div>
   </section>
+
+  <!-- Countdown JavaScript -->
+  <script>
+    function updateCountdown() {
+      // Target date: September 14, 2025, 6:02 PM Eastern Time
+      const targetDate = new Date('2025-09-14T18:02:00-04:00').getTime();
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+      } else {
+        // Countdown finished
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+
+        document.querySelector('.countdown-label').textContent = 'LAUNCHED!';
+      }
+    }
+
+    // Update countdown immediately and then every second
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 
 
   <!-- Bootstrap core JavaScript -->
