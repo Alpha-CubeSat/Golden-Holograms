@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,28 +85,30 @@
                     <a class="nav-link js-scroll-trigger" href="team.html">▸ <span class="navLetter">T</span>eam</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">▸ <span
-                            class="navLetter">C</span>ontact</a>
+                    <a class="nav-link js-scroll-trigger" href="publications.html">▸ <span
+                            class="navLetter">P</span>ublications</a>
                 </li>
                 <li class="nav-item"></li>
                     <a class="nav-link js-scroll-trigger" href="postcards.html">▸ <span class="navLetter">P</span>ostcards</a>
                 </li>
+                <li class="nav-item"></li>
+                  <a class="nav-link js-scroll-trigger" href="dashboard.html">▸ <span
+                          class="navLetter">D</span>ashboard</a>
+                </li>
 
-            </ul>
-        </div>
     </div>
-</nav>
-    
-<div class="postcards-title">
-  <h6 class="postcards-title" >Postcards from Earth</h6>
-  <h7 class="postcards-title" >What message would you send to the stars?</h7>
-  <h7 class="postcards-title" >Go to the homepage to send your own message!</h7>
-</div>
-  <div id="postcard-container" ></div>
+  </nav>
+
+  <div class="postcards-title">
+    <h6 class="postcards-title">Postcards from Earth</h6>
+    <h7 class="postcards-title">What message would you send to the stars?</h7>
+    <h7 class="postcards-title">Go to the homepage to send your own message!</h7>
+  </div>
+  <div id="postcard-container"></div>
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
     import { getFirestore, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-  
+
     // Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
@@ -117,67 +118,67 @@
       messagingSenderId: "372497949428",
       appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
     };
-  
+
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-  
+
     async function fetchApprovedMessages() {
       const messagesRef = collection(db, 'messages');
       const approvedMessagesQuery = query(messagesRef, where('approved', '==', true));
       const querySnapshot = await getDocs(approvedMessagesQuery);
-      
+
       const messages = [];
-        querySnapshot.forEach((doc) => {
+      querySnapshot.forEach((doc) => {
         const data = doc.data();
         messages.push({
-            firstName: data.firstName,
-            location: data.location,
-            content: data.content
+          firstName: data.firstName,
+          location: data.location,
+          content: data.content
         });
-        });
-  
+      });
+
       // Shuffle messages and select 8 (or fewer if there are not enough)
       const selectedMessages = [];
       while (selectedMessages.length < 8 && messages.length > 0) {
         const randomIndex = Math.floor(Math.random() * messages.length);
         selectedMessages.push(messages.splice(randomIndex, 1)[0]);
       }
-  
+
       displayMessagesOnPostcards(selectedMessages);
     }
-  
+
     function displayMessagesOnPostcards(messages) {
-    const container = document.getElementById('postcard-container');
-    container.innerHTML = ''; // Clear any existing postcards
+      const container = document.getElementById('postcard-container');
+      container.innerHTML = ''; // Clear any existing postcards
 
-    const backgrounds = [
-      'images/postcards/postcard1.png',
-      'images/postcards/postcard2.png',
-      'images/postcards/postcard3.png',
-      'images/postcards/postcard4.png',
-      'images/postcards/postcard5.png',
-      'images/postcards/postcard6.png'
-    ];
+      const backgrounds = [
+        'images/postcards/postcard1.png',
+        'images/postcards/postcard2.png',
+        'images/postcards/postcard3.png',
+        'images/postcards/postcard4.png',
+        'images/postcards/postcard5.png',
+        'images/postcards/postcard6.png'
+      ];
 
 
-    const maxPostcards = 8;
-    messages.slice(0, maxPostcards).forEach((messageData) => {
-      const postcard = document.createElement('div');
-      postcard.className = 'postcard';
-      
-      const content = document.createElement('div');
-      content.className = 'postcard-content';
-      content.innerHTML = `
+      const maxPostcards = 8;
+      messages.slice(0, maxPostcards).forEach((messageData) => {
+        const postcard = document.createElement('div');
+        postcard.className = 'postcard';
+
+        const content = document.createElement('div');
+        content.className = 'postcard-content';
+        content.innerHTML = `
         <p class="postcard-content"><strong>${messageData.firstName} from ${messageData.location}</strong></p>
         <p class="postcard-content">${messageData.content}</p>
       `;
-     
-      postcard.style.backgroundImage = `url('${backgrounds[Math.floor(Math.random() * backgrounds.length)]}')`;
-      postcard.appendChild(content);
-      container.appendChild(postcard);
-    });
-  }
-  
+
+        postcard.style.backgroundImage = `url('${backgrounds[Math.floor(Math.random() * backgrounds.length)]}')`;
+        postcard.appendChild(content);
+        container.appendChild(postcard);
+      });
+    }
+
     document.addEventListener('DOMContentLoaded', fetchApprovedMessages);
   </script>
 </body>
