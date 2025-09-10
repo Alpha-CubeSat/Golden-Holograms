@@ -980,6 +980,35 @@ p.carousel {
   margin-top: 8px;
 }
 
+/* LIVESTREAM LINK STYLES */
+.livestream-link {
+  margin-top: 25px;
+}
+
+.livestream-link a {
+  font-family: ShareTech;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #8B5CF6, #3B82F6, #F97316);
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.livestream-link a:hover {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #F97316, #8B5CF6, #3B82F6);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
+}
+
 /* TEAM */
 .team {
   text-align: center;
@@ -1481,6 +1510,11 @@ p.carousel {
     font-size: 32px;
     margin-top: 5px;
   }
+
+  .livestream-link a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 }
 
 @media only screen and (max-width: 501px) {
@@ -1593,5 +1627,10 @@ p.carousel {
 
   .countdown-separator {
     font-size: 28px;
+  }
+
+  .livestream-link a {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
