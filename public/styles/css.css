@@ -1366,6 +1366,148 @@ p.carousel {
   height: 150px;
 }
 
+/* PUBLICATIONS PAGE STYLES */
+
+/* Publications Grid Styles */
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+  margin-top: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.publication-card {
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15));
+  border-radius: 20px 0 20px 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  border-color: #FFA363;
+  box-shadow: 0 10px 30px rgba(255, 163, 99, 0.3);
+}
+
+.publication-thumbnail {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #8B5CF6, #3B82F6, #F97316);
+  border-radius: 15px 0 15px 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: none;
+}
+
+.publication-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 15px 0;
+}
+
+
+
+.publication-title {
+  font-family: AstroSpace;
+  font-size: 18px;
+  color: #FFA363;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.publication-meta {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
+}
+
+.publication-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.publication-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #8B5CF6, #3B82F6, #F97316);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.publication-link:hover {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(135deg, #F97316, #8B5CF6, #3B82F6);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.4);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-header h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  margin-top: 100px;
+  padding: 60px 0;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05));
+  border-radius: 50px 0 50px 0;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#publications .container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: 120px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.publications-grid {
+  width: 100%;
+  clear: both;
+}
+
 /* ALL ANIMATION CODE BELOW */
 
 /* STARY NIGHT BACKGROUND */
@@ -1515,6 +1657,24 @@ p.carousel {
     font-size: 16px;
     padding: 10px 20px;
   }
+
+  .publications-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .page-header h2 {
+    font-size: 32px;
+  }
+
+  .publication-card {
+    padding: 20px;
+  }
+
+  .publication-thumbnail {
+    height: 150px;
+  }
+
 }
 
 @media only screen and (max-width: 501px) {
