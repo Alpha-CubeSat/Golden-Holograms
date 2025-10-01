@@ -1,3 +1,13 @@
+/* Remove Bootstrap dropdown menu border */
+.dropdown-menu {
+  border: none !important;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* keep shadow for style */
+  background-color: rgba(11, 4, 41, 0.98);
+  /* match navbar style */
+  border-radius: 15px 0 15px 0;
+}
+
 /* NEW FONT */
 
 @font-face {
@@ -265,55 +275,6 @@ body {
   transform: translateX(0px);
 }
 
-#dropdown-menu {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  z-index: 1;
-  position: absolute;
-  top: 27px;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropbtn {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255, 0.5);
-  text-transform: lowercase;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  font-size: inherit;
-
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 35%;
-  background-color: #ffffff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  /* text-align: left; */
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
 
 
 
