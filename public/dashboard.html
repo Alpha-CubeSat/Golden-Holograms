@@ -129,8 +129,17 @@
     <div class="container">
       <div class="content margin-top">
         <h2>Live Mission Dashboard</h2>
-        <p>Our live mission dashboard is currently under development. Please check back soon for updates!</p>
-        <a class="link-button" href="/">Return Home</a>
+        <p>Real-time telemetry and mission data from Alpha CubeSat. Dashboard refreshes every 30 seconds.</p>
+
+        <!-- Dashboard iframe container -->
+        <div style="width: 100%; display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 2rem;">
+          <iframe
+            src="https://alphags.jonathanjma.com/kibana/s/public-dashboards/app/dashboards?auth_provider_hint=anonymous1#/view/3de6cc85-1b9e-4bb9-8070-53f53788ff25?embed=true&_g=%28refreshInterval%3A%28pause%3A%21f%2Cvalue%3A30000%29%2Ctime%3A%28from%3Anow-7d%2Fd%2Cto%3Anow%29%29&hide-filter-bar=true"
+            height="1600" width="100%"
+            style="border: none; max-width: 1400px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+            title="Alpha CubeSat Mission Dashboard" loading="lazy">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
