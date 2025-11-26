@@ -219,7 +219,7 @@ body {
 /* Help track button (placed under mission countdown) - consolidated styles */
 .help-track-container {
   text-align: center;
-  margin-top: 22px;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -997,7 +997,7 @@ p.carousel {
 
 /* LIVESTREAM LINK STYLES */
 .livestream-link {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .livestream-link a {
