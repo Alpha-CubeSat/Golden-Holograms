@@ -202,6 +202,7 @@ body {
 }
 
 
+
 /* NAVIGATION BAR */
 
 .mainNav {
@@ -213,6 +214,59 @@ body {
   text-transform: lowercase;
   font-size: 15px;
   letter-spacing: 1px;
+}
+
+/* Help track button (placed under mission countdown) - consolidated styles */
+.help-track-container {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.help-track-btn {
+  display: inline-block;
+  padding: 18px 40px;
+  /* larger clickable area */
+  font-size: 20px;
+  /* larger text */
+  color: #071022;
+  background: linear-gradient(90deg, #42D6CA 0%, #6EEFD9 100%);
+  border: none;
+  border-radius: 34px;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+  box-shadow: 0 14px 36px rgba(66, 214, 202, 0.14), inset 0 -2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+}
+
+.help-track-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 44px rgba(66, 214, 202, 0.22), inset 0 -2px 8px rgba(0, 0, 0, 0.06);
+  opacity: 0.99;
+}
+
+@media (max-width: 900px) {
+  .help-track-container {
+    margin-top: 18px;
+  }
+
+  .help-track-btn {
+    font-size: 18px;
+    padding: 16px 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .help-track-container {
+    margin-top: 14px;
+  }
+
+  .help-track-btn {
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 28px;
+  }
 }
 
 .nav-link {
@@ -879,7 +933,7 @@ p.carousel {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25vh 0px 35vh 0px;
+  margin: 25vh 0px 8vh 0px;
 }
 
 .home-title h1 {
@@ -943,7 +997,7 @@ p.carousel {
 
 /* LIVESTREAM LINK STYLES */
 .livestream-link {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .livestream-link a {

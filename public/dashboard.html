@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGWDSQ8KW7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VGWDSQ8KW7');
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Alpha Cubesat Live Mission Dashboard</title>
@@ -109,6 +119,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
               <a class="dropdown-item" href="publications.html">Publications</a>
               <a class="dropdown-item" href="news.html">News</a>
+              <a class="dropdown-item" href="videos.html">Videos</a>
             </div>
           </li>
           <li class="nav-item">
@@ -124,12 +135,21 @@
   </nav>
 
   <!-- DASHBOARD CONTENT -->
-  <section class="full-page about" id="dashboard" style="padding-top: 120px;">
-    <div class="container">
+  <section class="full-page" id="dashboard" style="padding-top: 120px;">
+    <div class="container-fluid" style="max-width: 95%; padding: 0 20px;">
       <div class="content margin-top">
         <h2>Live Mission Dashboard</h2>
-        <p>Our live mission dashboard is currently under development. Please check back soon for updates!</p>
-        <a class="link-button" href="/">Return Home</a>
+        <p>Real-time mission data from Alpha CubeSat.</p>
+
+
+        <!-- Dashboard iframe container -->
+        <div style="width: 100%; display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 2rem;">
+          <iframe
+            src="https://alphags.jonathanjma.com/kibana/s/public-dashboards/app/dashboards?auth_provider_hint=anonymous1#/view/3de6cc85-1b9e-4bb9-8070-53f53788ff25?embed=true&_g=%28refreshInterval%3A%28pause%3A%21f%2Cvalue%3A30000%29%2Ctime%3A%28from%3Anow-7d%2Fd%2Cto%3Anow%29%29&hide-filter-bar=true"
+            height="1600" width="100%" style="border: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+            title="Alpha CubeSat Mission Dashboard" loading="lazy">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -149,7 +169,8 @@
       </script>
 
       <div class="col-6 contact-content">
-        <p>cornellalphacubesat@gmail.com</p>
+        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+            data-cfemail="c8aba7baa6ada4a4a9a4b8a0a9abbdaaadbba9bc88afa5a9a1a4e6aba7a5">[email&#160;protected]</a></p>
         <p>124 Hoy Rd, 450 Upson Hall <br>
           Cornell University <br>
           Ithaca, NY 14853</p>

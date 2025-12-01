@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGWDSQ8KW7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VGWDSQ8KW7');
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Alpha Cubesat HomePage</title>
@@ -116,6 +126,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
               <a class="dropdown-item" href="publications.html">Publications</a>
               <a class="dropdown-item" href="news.html">News</a>
+              <a class="dropdown-item" href="videos.html">Videos</a>
             </div>
           </li>
 
@@ -178,7 +189,7 @@
     <div class="home-title">
       <h1>Alpha CubeSat</h1>
       <div class="countdown-container">
-        <div class="countdown-label">Launch Countdown</div>
+        <div class="countdown-label"><b>Mission Starts December 2nd</b></div>
         <div class="countdown-timer" id="countdown">
           <div class="time-unit">
             <div class="time-number" id="days">00</div>
@@ -200,13 +211,25 @@
             <div class="time-label">Seconds</div>
           </div>
         </div>
-        <div class="livestream-link">
-          <a href="https://www.youtube.com/watch?v=KPR5PvVtV38" target="_blank" rel="noopener noreferrer">
-            Watch Live Launch Stream
-          </a>
-        </div>
       </div>
+      <!-- <div class="livestream-link">
+          <a href="https://www.youtube.com/watch?v=KPR5PvVtV38" target="_blank" rel="noopener noreferrer">
+            We've launched! Watch the livestream here
+          </a>
+        </div> -->
+      <div class="livestream-link">
+        <a href="https://cornell.app.box.com/s/n4se5ku0ltjb1of2piagfz1y7xa92n47" target="_blank"
+          rel="noopener noreferrer">
+          HELP US TRACK OUR LIGHTSAIL!
+        </a>
+      </div>
+      <div class="help-track-container">
+        <a class="help-track-btn" href="https://crowdfunding.cornell.edu/project/48011" target="_blank"
+          rel="noopener noreferrer">SUPPORT US!</a>
+      </div>
+
     </div>
+
     <div class="container">
 
       <div class="content margin-top">
@@ -409,7 +432,7 @@
   <script>
     function updateCountdown() {
       // Target date: September 14, 2025, 6:02 PM Eastern Time
-      const targetDate = new Date('2025-09-14T18:02:00-04:00').getTime();
+      const targetDate = new Date('2025-12-02T03:00:00-04:00').getTime();
       const now = new Date().getTime();
       const difference = targetDate - now;
 

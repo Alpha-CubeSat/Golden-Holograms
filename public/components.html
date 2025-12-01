@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGWDSQ8KW7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VGWDSQ8KW7');
+    </script>
+
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Alpha CubeSat Holograms</title>
@@ -29,6 +39,7 @@
 
     <!-- <script src="./js/slider.js"></script> -->
     <script src="./js/scroll.js"></script>
+    <script src="./js/cubesatScroll.js"></script>
 
 
     <!-- BOOTSTRAP -->
@@ -123,6 +134,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
                             <a class="dropdown-item" href="publications.html">Publications</a>
                             <a class="dropdown-item" href="news.html">News</a>
+                            <a class="dropdown-item" href="videos.html">Videos</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -138,7 +150,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- HOME ABOUT -->
 
@@ -188,6 +199,20 @@
         the Earth’s magnetic field. This will help us easily contact the CubeSat, and allow for a smooth deployment of
         the light sail. The CubeSat will stabilize itself using only magnetorquers—coils that produce their own magnetic
         field, which then interacts with Earth’s.</p>
+
+
+    <!-- SCROLL ANIMATION -->
+    <section id="page-top">
+        <div class="alone">
+            <div class="container">
+                <div class="content">
+                    <!-- <img class="alone" src="images/cubesatScroll/animation001.png"> -->
+                    <canvas class="cubsatScroll"> </canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <img class="alone" src="images/components2.png"
         alt="Action shot of the electronics stack being integrated into the CubeSat. The RockBLOCK is the shiny metal box at left; one of the copper magnetorquers can be seen on the CubeSat’s right side.">
     <p class="alone">
