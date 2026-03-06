@@ -19,18 +19,19 @@
 
   <!-- Muting Site -->
   <script>
-    [].slice.call(document.querySelectorAll('audio')).forEach(function (audio) {
-      audio.muted = true;
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("audio").forEach(audio => {
+        audio.muted = true;
+      });
     });
   </script>
-
 
   <!-- EXTERNAL JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
   <script
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/js/splide-extension-video.min.js"></script>
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.4.6/dist/js/splide-extension-video.min.js"></script> -->
   <script src="https://kit.fontawesome.com/f7ec263f57.js" crossorigin="anonymous"></script>
 
 
@@ -158,21 +159,18 @@
   <script>
     (function () {
       // Tutorial: https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27
-      window.addEventListener('scroll', function (event) {
-        var depth, i, layer, layers, len, movement, topDistance, translate3d;
-        topDistance = this.pageYOffset;
-        layers = document.querySelectorAll("[data-type='parallax']");
-        for (i = 0, len = layers.length; i < len; i++) {
-          layer = layers[i];
-          depth = layer.getAttribute('data-depth');
-          movement = -(topDistance * depth);
-          translate3d = 'translate3d(0, ' + movement + 'px, 0)';
-          layer.style['-webkit-transform'] = translate3d;
-          layer.style['-moz-transform'] = translate3d;
-          layer.style['-ms-transform'] = translate3d;
-          layer.style['-o-transform'] = translate3d;
-          layer.style.transform = translate3d;
-        }
+      const layers = document.querySelectorAll("[data-type='parallax']");
+
+      window.addEventListener("scroll", () => {
+        requestAnimationFrame(() => {
+          const topDistance = window.pageYOffset;
+
+          layers.forEach(layer => {
+            const depth = layer.dataset.depth;
+            const movement = -(topDistance * depth);
+            layer.style.transform = `translate3d(0, ${movement}px, 0)`;
+          });
+        });
       });
 
     }).call(this);
@@ -331,64 +329,6 @@
     </form>
   </section>
 
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-
-    // Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
-      authDomain: "alpha-messageboard.firebaseapp.com",
-      projectId: "alpha-messageboard",
-      storageBucket: "alpha-messageboard.appspot.com",
-      messagingSenderId: "372497949428",
-      appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-
-    document.getElementById('message-form').addEventListener('submit', async function (e) {
-      e.preventDefault();
-
-      const firstName = document.getElementById('first-name').value;
-      const location = document.getElementById('location').value;
-      const message = document.getElementById('message').value;
-
-      try {
-        await addDoc(collection(db, 'messages'), {
-          firstName: firstName,
-          location: location,
-          content: message,
-          timestamp: serverTimestamp(),
-          approved: false,
-          favorite: false
-        });
-        alert('Message sent for approval!');
-        document.getElementById('first-name').value = '';
-        document.getElementById('location').value = '';
-        document.getElementById('message').value = '';
-      } catch (error) {
-        console.error('Error writing message: ', error);
-      }
-    });
-    //--------------
-
-    function updateCharCount(id, countId, max) {
-      const input = document.getElementById(id);
-      const counter = document.getElementById(countId);
-
-      input.addEventListener('input', () => {
-        counter.textContent = `${input.value.length} / ${max}`;
-      });
-    }
-
-
-    // Set up listeners for each field
-    updateCharCount('first-name', 'first-name-count', 15);
-    updateCharCount('location', 'location-count', 20);
-    updateCharCount('message', 'message-count', 200);
-  </script>
 
   <!-- CONTACT -->
   <section class="half-page" id="contact">
@@ -437,6 +377,71 @@
   <!-- <script src="js/scrolling-nav.js"></script> -->
 
   <!-- </div> -->
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCzb9MqCW8Uq5bjyrXn4jHIBy2rg5yIVe4",
+      authDomain: "alpha-messageboard.firebaseapp.com",
+      projectId: "alpha-messageboard",
+      storageBucket: "alpha-messageboard.appspot.com",
+      messagingSenderId: "372497949428",
+      appId: "1:372497949428:web:94f6f2acd6951d488ab4a1"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    document.getElementById('message-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const location = document.getElementById('location').value;
+      const message = document.getElementById('message').value;
+
+      try {
+        await addDoc(collection(db, 'messages'), {
+          firstName: firstName,
+          location: location,
+          content: message,
+          timestamp: serverTimestamp(),
+          approved: false,
+          favorite: false
+        });
+        alert('Message sent for approval!');
+        document.getElementById('first-name').value = '';
+        document.getElementById('location').value = '';
+        document.getElementById('message').value = '';
+
+        document.getElementById('first-name-count').textContent = "0 / 15";
+        document.getElementById('location-count').textContent = "0 / 20";
+        document.getElementById('message-count').textContent = "0 / 200";
+      } catch (error) {
+        console.error('Error writing message: ', error);
+      }
+    });
+    //--------------
+
+    function updateCharCount(id, countId, max) {
+      const input = document.getElementById(id);
+      const counter = document.getElementById(countId);
+
+      input.addEventListener('input', () => {
+        counter.textContent = `${input.value.length} / ${max}`;
+      });
+    }
+
+
+    // Set up listeners for each field
+    updateCharCount('first-name', 'first-name-count', 15);
+    updateCharCount('location', 'location-count', 20);
+    updateCharCount('message', 'message-count', 200);
+
+  </script>
+
 </body>
 
 </html>
