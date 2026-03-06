@@ -188,28 +188,12 @@
   <section class="full-page about">
     <div class="home-title">
       <h1>Alpha CubeSat</h1>
-      <div class="countdown-container">
-        <div class="countdown-label"><b>Mission Starts December 2nd</b></div>
-        <div class="countdown-timer" id="countdown">
-          <div class="time-unit">
-            <div class="time-number" id="days">00</div>
-            <div class="time-label">Days</div>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="time-unit">
-            <div class="time-number" id="hours">00</div>
-            <div class="time-label">Hours</div>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="time-unit">
-            <div class="time-number" id="minutes">00</div>
-            <div class="time-label">Minutes</div>
-          </div>
-          <div class="countdown-separator">:</div>
-          <div class="time-unit">
-            <div class="time-number" id="seconds">00</div>
-            <div class="time-label">Seconds</div>
-          </div>
+      <div class="mission-complete-container">
+        <div class="mission-complete">
+          <a href="https://www.cornellsun.com/article/2026/01/cornell-students-make-history-deploy-world-s-first-free-flying-light-sail"
+            target="_blank" rel="noopener noreferrer">
+            <b>Mission Complete!</b>
+          </a>
         </div>
       </div>
       <!-- <div class="livestream-link">
@@ -219,12 +203,13 @@
         </div> -->
       <div class="livestream-link">
         <a href="https://www.youtube.com/live/lIFdCA7Ow3w?t=1654s" target="_blank" rel="noopener noreferrer">
-          1. ISS DEPLOYMENT LIVESTREAM!!
+          ISS DEPLOYMENT LIVESTREAM!!
         </a>
 
         <!--add live links here-->
       </div>
-      <div class="livestream-link">
+
+      <!-- <div class="livestream-link">
         <a href="dashboard.html" target="_blank" rel="noopener noreferrer">2. LIVE MISSION DASHBOARD!</a>
       </div>
 
@@ -235,13 +220,8 @@
         </a>
 
         <!--add live links here-->
-      </div>
+    </div> -->
 
-      <div class="help-track-container">
-        <a class="help-track-btn"
-          href="https://www.cornellsun.com/article/2025/12/cornell-students-make-history-deploy-world-s-first-free-flying-light-sail"
-          target="_blank" rel="noopener noreferrer">MISSION SUCCESS!</a>
-      </div>
 
     </div>
 
@@ -443,46 +423,6 @@
     </div>
   </section>
 
-  <!-- Countdown JavaScript -->
-  <script>
-    function updateCountdown() {
-      // Target date: December 2, 2025, 03:20 AM Eastern Time
-      const targetDate = new Date('2025-12-02T03:20:00-05:00').getTime();
-      const now = Date.now();
-      const difference = targetDate - now;
-
-      if (difference >= 0) {
-        // Time remaining until target (normal countdown)
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-        document.getElementById('days').textContent = days.toString().padStart(2, '0');
-        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        document.querySelector('.countdown-label').textContent = 'Mission Starts December 2nd';
-      } else {
-        // Positive countdown (time since target) — show as +DD:HH:MM:SS
-        const elapsed = now - targetDate;
-        const days = Math.floor(elapsed / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
-
-        document.getElementById('days').textContent = (days.toString().padStart(2, '0'));
-        document.getElementById('hours').textContent = (hours.toString().padStart(2, '0'));
-        document.getElementById('minutes').textContent = (minutes.toString().padStart(2, '0'));
-        document.getElementById('seconds').textContent = (seconds.toString().padStart(2, '0'));
-        document.querySelector('.countdown-label').textContent = 'Time Since Launch';
-      }
-    }
-
-    // Update countdown immediately and then every second
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-  </script>
 
 
   <!-- Bootstrap core JavaScript -->
